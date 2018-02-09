@@ -34,15 +34,11 @@ int main(void)
     // Configure reset
     SFRRPCR |= SYSRSTRE | SYSRSTUP;             // Enable internal pullup resistor on reset pin
 
-    /* CANNOT GET IT TO WORK
     // Configure Comparator input & output
     P1SEL0 |= BIT2;                             // Select eCOMP input function on P1.2/C2
-    P1SEL1 |= BIT3;
-    P1SEL0 |= BIT3;                             // Select eCOMP input function on P1.3/C3
-    P1SEL1 |= BIT3;
-    //P2DIR  |= BIT0;                             // Select CPOUT function on P2.0/COUT
-    //P2SEL1 |= BIT0;
-    */
+    P1SEL1 |= BIT2;
+    P2DIR  |= BIT0;                             // Select CPOUT function on P2.0/COUT
+    P2SEL1 |= BIT0;
 
     // Configure Interrupt Button
     P1IES  |= BIT1;                             // play button interrupts on high-to-low transition
@@ -58,9 +54,12 @@ int main(void)
     P1DIR |= BIT3 | BIT4;
     P2DIR |= BIT1 | BIT6 | BIT7;
 
+    SYSCFG2 |= TB0TRGSEL;                       // Disables Hi-Z Timer Outputs being set by the comparator output
+                                                // https://e2e.ti.com/support/microcontrollers/msp430/f/166/p/661791/2438331#2438331
+
     PM5CTL0 &= ~LOCKLPM5;                       // Disable the GPIO power-on default high-impedance mode to activate
                                                 // previously configured port settings
-    /*
+
     // Configure reference
     PMMCTL0_H = PMMPW_H;                        // Unlock the PMM registers
     PMMCTL2 |= INTREFEN;                        // Enable internal reference
@@ -68,15 +67,11 @@ int main(void)
 
     // Setup eCOMP
     CPCTL0 |= CPPSEL1;                          // Select C2 as input for V+ terminal
-    CPCTL0 |= CPNSEL0 | CPNSEL1;                // Select C3 as input for V- terminal
-    //CPCTL0 |= CPNSEL1 | CPNSEL2;                // Select DAC as input for V- terminal
+    CPCTL0 |= CPNSEL1 | CPNSEL2;                // Select DAC as input for V- terminal
     CPCTL0 |= CPPEN | CPNEN;                    // Enable eCOMP input
-    //CPDACCTL |= CPDACREFS | CPDACEN;            // Select on-chip VREF and enable DAC
-    //CPDACDATA |= 0x003f;                        // CPDACBUF1=On-chip VREF *32/64 = 0.75V
-    CPCTL1 |= CPINV | CPIIE | CPIE;             // eCOMP inverted output, dual edge interrupt enabled
-    CPCTL1 |= CPHSEL_1;                         // 10mV hysteresis mode
-    CPCTL1 |= CPEN | CPMSEL;                    // enable eCOMP in low power mode
-     */
+    CPDACCTL |= CPDACREFS | CPDACEN;            // Select on-chip VREF and enable DAC
+    CPDACDATA |= 0x0020;                        // CPDACBUF1=On-chip VREF *32/64 = 0.75V
+    CPCTL1 |= CPEN | CPMSEL | CPINV;            // Turn on eCOMP, in low power mode, inverted output*/
 
     P1IFG = 0;                                  // clear any pending interrupts
     P1IE = BIT1;                                // enable interrupts on P1.1
@@ -86,25 +81,6 @@ int main(void)
         __no_operation();                       // For debug
     }
 }
-
-/*// eCOMP Interrupt Vector handler
-#pragma vector=ECOMP0_VECTOR
-__interrupt void ECOMP_ISR(void)
-{
-    switch(__even_in_range(CPIV, CPIV__CPIIFG))
-    {
-        case CPIV__NONE:
-            break;
-        case CPIV__CPIFG:
-            P2OUT &= !BIT6;
-            break;
-        case CPIV__CPIIFG:
-            P2OUT |= BIT6;
-            break;
-        default:
-            break;
-    }
-}*/
 
 // Port1 Interrupt Vector handler
 #pragma vector=PORT1_VECTOR
