@@ -32,3 +32,5 @@ _autosave-*
 *Debug*
 *targetConfigs*
 *lnk_msp430fr2000.cmd
+
+~$*.xlsx
