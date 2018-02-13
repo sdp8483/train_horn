@@ -3,6 +3,7 @@ LIBS:msp430
 LIBS:mcp73831
 LIBS:tps782
 LIBS:tpa6211a1
+LIBS:train_horn
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -1259,7 +1260,7 @@ U 1 1 5A824476
 P 7050 4050
 F 0 "TP1" V 7000 4100 50  0000 C CNN
 F 1 "P1.3" V 7050 4300 50  0000 C CNN
-F 2 "Connectors_TestPoints:Test_Point_Pad_d2.5mm" H 7250 4050 50  0001 C CNN
+F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 4050 50  0001 C CNN
 F 3 "" H 7250 4050 50  0001 C CNN
 F 4 "NONE" H 7050 4050 60  0001 C CNN "Manufacture"
 F 5 "NONE" H 7050 4050 60  0001 C CNN "Mfg Part Number"
@@ -1274,7 +1275,7 @@ U 1 1 5A8251A3
 P 7050 4150
 F 0 "TP2" V 7000 4200 50  0000 C CNN
 F 1 "P1.4" V 7050 4400 50  0000 C CNN
-F 2 "Connectors_TestPoints:Test_Point_Pad_d2.5mm" H 7250 4150 50  0001 C CNN
+F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 4150 50  0001 C CNN
 F 3 "" H 7250 4150 50  0001 C CNN
 F 4 "NONE" H 7050 4150 60  0001 C CNN "Manufacture"
 F 5 "NONE" H 7050 4150 60  0001 C CNN "Mfg Part Number"
@@ -1289,7 +1290,7 @@ U 1 1 5A825733
 P 7050 4350
 F 0 "TP3" V 7000 4400 50  0000 C CNN
 F 1 "P1.6" V 7050 4600 50  0000 C CNN
-F 2 "Connectors_TestPoints:Test_Point_Pad_d2.5mm" H 7250 4350 50  0001 C CNN
+F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 4350 50  0001 C CNN
 F 3 "" H 7250 4350 50  0001 C CNN
 F 4 "NONE" H 7050 4350 60  0001 C CNN "Manufacture"
 F 5 "NONE" H 7050 4350 60  0001 C CNN "Mfg Part Number"
@@ -1304,7 +1305,7 @@ U 1 1 5A8257F2
 P 7050 4850
 F 0 "TP4" V 7000 4900 50  0000 C CNN
 F 1 "P2.6" V 7050 5100 50  0000 C CNN
-F 2 "Connectors_TestPoints:Test_Point_Pad_d2.5mm" H 7250 4850 50  0001 C CNN
+F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 4850 50  0001 C CNN
 F 3 "" H 7250 4850 50  0001 C CNN
 F 4 "NONE" H 7050 4850 60  0001 C CNN "Manufacture"
 F 5 "NONE" H 7050 4850 60  0001 C CNN "Mfg Part Number"
@@ -1319,7 +1320,7 @@ U 1 1 5A825CD6
 P 7050 4950
 F 0 "TP5" V 7000 5000 50  0000 C CNN
 F 1 "P2.7" V 7050 5200 50  0000 C CNN
-F 2 "Connectors_TestPoints:Test_Point_Pad_d2.5mm" H 7250 4950 50  0001 C CNN
+F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 4950 50  0001 C CNN
 F 3 "" H 7250 4950 50  0001 C CNN
 F 4 "NONE" H 7050 4950 60  0001 C CNN "Manufacture"
 F 5 "NONE" H 7050 4950 60  0001 C CNN "Mfg Part Number"
