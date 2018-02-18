@@ -16,7 +16,7 @@
 //                MSP430FR2000
 //             -----------------
 //         /|\|             P1.0|--> LED for timer status
-//          | |             P1.1|<-- Button to gnd
+//          | |             P1.3|<-- Play Button to gnd
 //          | |             P1.2|--> Audio Amp Shutdown
 //          | |       P1.7/VREF+|--> 1.2VREF Output
 //          | |             P1.5|--> ~248.24Hz
@@ -29,6 +29,8 @@
 //******************************************************************************
 #include <msp430.h>
 
+#define PLAY_BTN    BIT3                        // Play button port 1 input
+
 int main(void)
 {
     WDTCTL = WDTPW | WDTHOLD;                   // Stop WDT
@@ -37,9 +39,9 @@ int main(void)
     SFRRPCR |= SYSRSTRE | SYSRSTUP;             // Enable internal pullup resistor on reset pin
 
     // Configure Interrupt Button
-    P1IES  |= BIT1;                             // play button interrupts on high-to-low transition
-    P1REN  |= BIT1;                             // enable resistor, must set P1OUT for pullup
-    P1OUT  |= BIT1;
+    P1IES  |= PLAY_BTN;                             // play button interrupts on high-to-low transition
+    P1REN  |= PLAY_BTN;                             // enable resistor, must set P1OUT for pullup
+    P1OUT  |= PLAY_BTN;
 
     // Configure Audio Amp Shutdown
     P1DIR |= BIT2;                              // P1.2 control shutdown of audio amp
@@ -56,8 +58,8 @@ int main(void)
     P1SEL1 |= BIT7;
 
     // Configure Unused GPIO
-    P1DIR |= BIT3 | BIT4 | BIT6;
-    P2DIR |= BIT6 | BIT7;
+    //P1DIR |= BIT3 | BIT4 | BIT6;
+    //P2DIR |= BIT6 | BIT7;
 
     PM5CTL0 &= ~LOCKLPM5;                       // Disable the GPIO power-on default high-impedance mode to activate
                                                 // previously configured port settings
@@ -67,8 +69,8 @@ int main(void)
     PMMCTL2 |= EXTREFEN;                        // Enable external reference
     while(!(PMMCTL2 & REFGENRDY));              // Poll until internal reference settles
 
-    P1IFG = 0;                                  // clear any pending interrupts
-    P1IE = BIT1;                                // enable interrupts on P1.1
+    P1IFG &= ~PLAY_BTN;                                  // clear any pending interrupts
+    P1IE |= PLAY_BTN;                                // enable interrupts on P1.1
 
     for(;;) {
         __bis_SR_register(LPM3_bits | GIE);     // Enter LPM3, enable interrupts
@@ -80,7 +82,7 @@ int main(void)
 #pragma vector=PORT1_VECTOR
 __interrupt void PORT1_ISR(void)
 {
-    P1IE = 0;                                   // disable any further interrupts
+    P1IE &= ~PLAY_BTN;                                   // disable any further interrupts
     P1OUT ^= BIT0 | BIT2;                       // toggle P1.0 LED for timer_b status
                                                 // toggle P1.2 to turn audio amp on
 
@@ -124,8 +126,8 @@ __interrupt void TIMER0_B1_ISR(void)
             P1OUT    &= ~(BIT5 | BIT6 | BIT7);  // set pins low since they could have been high during interrupt
 
             // enable play button again
-            P1IFG = 0;                          // acknowledge all interrupts
-            P1IE  = BIT1;                        // enable interrupt on P1.1
+            P1IFG &= ~PLAY_BTN;                          // acknowledge all interrupts
+            P1IE  |= PLAY_BTN;                        // enable interrupt on P1.1
             break;
         default: 
             break;

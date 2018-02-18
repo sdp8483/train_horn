@@ -1086,7 +1086,7 @@ Text GLabel 6450 5900 0    50   Input ~ 0
 PLAY
 Text GLabel 6600 3750 2    50   Input ~ 0
 PLAY_LED
-Text GLabel 6600 3850 2    50   Input ~ 0
+Text GLabel 6600 4050 2    50   Input ~ 0
 PLAY
 Text Notes 6000 5250 0    60   ~ 0
 USER IO
@@ -1257,16 +1257,16 @@ See Spreadsheet for Low Battery Range
 $Comp
 L Test_Point TP1
 U 1 1 5A824476
-P 7050 4050
-F 0 "TP1" V 7000 4100 50  0000 C CNN
-F 1 "P1.3" V 7050 4300 50  0000 C CNN
-F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 4050 50  0001 C CNN
-F 3 "" H 7250 4050 50  0001 C CNN
-F 4 "NONE" H 7050 4050 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7050 4050 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7050 4050 60  0001 C CNN "Package"
-F 7 "NONE" H 7050 4050 60  0001 C CNN "Description"
-	1    7050 4050
+P 7050 3850
+F 0 "TP1" V 7000 3900 50  0000 C CNN
+F 1 "P1.1" V 7050 4100 50  0000 C CNN
+F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 3850 50  0001 C CNN
+F 3 "" H 7250 3850 50  0001 C CNN
+F 4 "NONE" H 7050 3850 60  0001 C CNN "Manufacture"
+F 5 "NONE" H 7050 3850 60  0001 C CNN "Mfg Part Number"
+F 6 "NONE" H 7050 3850 60  0001 C CNN "Package"
+F 7 "NONE" H 7050 3850 60  0001 C CNN "Description"
+	1    7050 3850
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1872,8 +1872,6 @@ Wire Wire Line
 Wire Wire Line
 	8750 1950 8800 1950
 Wire Wire Line
-	6350 3850 6600 3850
-Wire Wire Line
 	6450 5900 6800 5900
 Wire Wire Line
 	6350 3750 6600 3750
@@ -1952,8 +1950,6 @@ Wire Notes Line
 	6000 6200 6000 5150
 Wire Notes Line
 	6000 5150 7400 5150
-Wire Wire Line
-	6350 4050 7050 4050
 Wire Wire Line
 	7050 4150 6350 4150
 Wire Wire Line
@@ -2080,4 +2076,8 @@ Wire Wire Line
 	9800 1650 10100 1650
 Wire Wire Line
 	9800 1750 10100 1750
+Wire Wire Line
+	6350 4050 6600 4050
+Wire Wire Line
+	6350 3850 7050 3850
 $EndSCHEMATC
