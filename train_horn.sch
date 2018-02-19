@@ -1560,80 +1560,48 @@ F 7 "NONE" H 8150 2650 60  0001 C CNN "Description"
 	1    8150 2650
 	0    1    1    0   
 $EndComp
-Text Notes 9050 2700 0    50   ~ 0
+Text Notes 9050 2850 0    50   ~ 0
 Gain
-Text Notes 9100 2800 0    50   ~ 0
+Text Notes 9100 2950 0    50   ~ 0
 4
-Text Notes 9100 2900 0    50   ~ 0
+Text Notes 9100 3050 0    50   ~ 0
 8
-Text Notes 9100 3000 0    50   ~ 0
+Text Notes 9100 3150 0    50   ~ 0
 12
-Text Notes 9100 3100 0    50   ~ 0
+Text Notes 9100 3250 0    50   ~ 0
 16
-Text Notes 9300 2700 0    50   ~ 0
+Text Notes 9300 2850 0    50   ~ 0
 JP3
-Text Notes 9700 2700 0    50   ~ 0
+Text Notes 9700 2850 0    50   ~ 0
 JP5
-Text Notes 9900 2700 0    50   ~ 0
+Text Notes 9900 2850 0    50   ~ 0
 JP6
-Text Notes 10100 2700 0    50   ~ 0
+Text Notes 10100 2850 0    50   ~ 0
 JP7
-Text Notes 10300 2700 0    50   ~ 0
+Text Notes 10300 2850 0    50   ~ 0
 JP8
-Text Notes 9300 2800 0    50   ~ 0
-O
-Text Notes 9500 2700 0    50   ~ 0
+Text Notes 9500 2850 0    50   ~ 0
 JP4
-Text Notes 9300 3100 0    50   ~ 0
-C
-Text Notes 9050 3300 0    50   ~ 0
-O=OPEN\nC=CLOSED
-Text Notes 9500 2800 0    50   ~ 0
-O
-Text Notes 9700 2800 0    50   ~ 0
-O
-Text Notes 9900 2800 0    50   ~ 0
-O
-Text Notes 10100 2800 0    50   ~ 0
-O
-Text Notes 10300 2800 0    50   ~ 0
-O
-Text Notes 9500 3100 0    50   ~ 0
-C
-Text Notes 9700 3100 0    50   ~ 0
-C
-Text Notes 9900 3100 0    50   ~ 0
-C
-Text Notes 10100 3100 0    50   ~ 0
-C
-Text Notes 10300 3100 0    50   ~ 0
-C
-Text Notes 9350 2600 0    60   ~ 0
+Text Notes 9300 3250 0    50   ~ 0
+X
+Text Notes 9500 3250 0    50   ~ 0
+X
+Text Notes 9700 3250 0    50   ~ 0
+X
+Text Notes 9900 3250 0    50   ~ 0
+X
+Text Notes 10100 3250 0    50   ~ 0
+X
+Text Notes 10300 3250 0    50   ~ 0
+X
+Text Notes 9350 2750 0    60   ~ 0
 GAIN ADJUSTMENT
-Text Notes 9700 2900 0    50   ~ 0
-C
-Text Notes 9900 2900 0    50   ~ 0
-C
-Text Notes 9700 3000 0    50   ~ 0
-C
-Text Notes 9900 3000 0    50   ~ 0
-C
-Text Notes 9500 3000 0    50   ~ 0
-C
-Text Notes 10100 3000 0    50   ~ 0
-C
-Text Notes 10100 2900 0    50   ~ 0
-O
-Text Notes 10300 2900 0    50   ~ 0
-O
-Text Notes 10300 3000 0    50   ~ 0
-O
-Text Notes 9500 2900 0    50   ~ 0
-O
-Text Notes 9300 2900 0    50   ~ 0
-O
-Text Notes 9300 3000 0    50   ~ 0
-O
+Text Notes 9500 3150 0    50   ~ 0
+X
+Text Notes 10100 3150 0    50   ~ 0
+X
+Text Notes 9300 3150 0    50   ~ 0
+X
 Wire Wire Line
 	4250 3750 4850 3750
 Wire Wire Line
@@ -2045,33 +2013,33 @@ Connection ~ 7950 1750
 Connection ~ 8350 1550
 Connection ~ 8350 1750
 Wire Notes Line
-	9050 2700 10450 2700
+	9050 2850 10450 2850
 Wire Notes Line
-	10250 2600 10250 3100
+	10250 2750 10250 3250
 Wire Notes Line
-	10050 2600 10050 3100
+	10050 2750 10050 3250
 Wire Notes Line
-	9850 2600 9850 3100
+	9850 2750 9850 3250
 Wire Notes Line
-	9650 2600 9650 3100
+	9650 2750 9650 3250
 Wire Notes Line
-	9450 2600 9450 3100
+	9450 2750 9450 3250
 Wire Notes Line
-	9250 2600 9250 3100
+	9250 2750 9250 3250
 Wire Notes Line
-	9050 2600 9050 3100
+	9050 2750 9050 3250
 Wire Notes Line
-	9050 3100 10450 3100
+	9050 3250 10450 3250
 Wire Notes Line
-	10450 3100 10450 2600
+	10450 3250 10450 2750
 Wire Notes Line
-	10450 2600 9050 2600
+	10450 2750 9050 2750
 Wire Notes Line
-	9050 2800 10450 2800
+	9050 2950 10450 2950
 Wire Notes Line
-	9050 2900 10450 2900
+	9050 3050 10450 3050
 Wire Notes Line
-	9050 3000 10450 3000
+	9050 3150 10450 3150
 Wire Wire Line
 	9800 1650 10100 1650
 Wire Wire Line
@@ -2080,4 +2048,10 @@ Wire Wire Line
 	6350 4050 6600 4050
 Wire Wire Line
 	6350 3850 7050 3850
+Text Notes 9300 3050 0    50   ~ 0
+X
+Text Notes 10300 3150 0    50   ~ 0
+X
+Text Notes 10300 3050 0    50   ~ 0
+X
 $EndSCHEMATC
