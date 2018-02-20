@@ -42,11 +42,11 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Digital Train Horn"
-Date "2018-02-11"
+Title "Train Horn"
+Date "2018-02-19"
 Rev ""
 Comp "Perry Leumas"
-Comment1 ""
+Comment1 "INSTALL LIGHT PIPE ON LEDS: Bivar VLP SERIES"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -58,7 +58,11 @@ P 5600 3750
 F 0 "U4" H 6100 2450 60  0000 C CNN
 F 1 "MSP430FR2000_TSSOP" H 5600 3850 60  0000 C CNN
 F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 5900 3200 60  0001 C CNN
-F 3 "" H 5900 3200 60  0001 C CNN
+F 3 "http://www.ti.com/product/MSP430FR2000" H 5900 3200 60  0001 C CNN
+F 4 "Texas Instruments" H 5600 3750 60  0001 C CNN "Manufacture"
+F 5 "MSP430FR2000IPW16" H 5600 3750 60  0001 C CNN "Mfg Part Number"
+F 6 "16-TSSOP" H 5600 3750 60  0001 C CNN "Package"
+F 7 "16 MHZ ULTRA-LOW-POWER MICROCONT" H 5600 3750 60  0001 C CNN "Description"
 	1    5600 3750
 	1    0    0    -1  
 $EndComp
@@ -70,6 +74,8 @@ F 0 "LS1" H 10350 1975 50  0000 R CNN
 F 1 "Speaker" H 10350 1900 50  0000 R CNN
 F 2 "lib_fp:TerminalBlock_02x5mm_Straight" H 10300 1550 50  0001 C CNN
 F 3 "" H 10290 1700 50  0001 C CNN
+F 4 "PC PIN" H 10300 1750 60  0001 C CNN "Package"
+F 5 "2POS 5MM SCREW TERMINAL BLOCK" H 10300 1750 60  0001 C CNN "Description"
 	1    10300 1750
 	1    0    0    1   
 $EndComp
@@ -96,152 +102,18 @@ F 3 "" H 4250 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C6
-U 1 1 5A773C0B
-P 4700 3950
-F 0 "C6" H 4710 4020 50  0000 L CNN
-F 1 "100nF" H 4710 3870 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 4700 3950 50  0001 C CNN
-F 3 "" H 4700 3950 50  0001 C CNN
-F 4 "NONE" H 4700 3950 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 4700 3950 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 4700 3950 60  0001 C CNN "Package"
-F 7 "NONE" H 4700 3950 60  0001 C CNN "Description"
-	1    4700 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C5
-U 1 1 5A773C4A
-P 4450 3950
-F 0 "C5" H 4460 4020 50  0000 L CNN
-F 1 "1uF" H 4460 3870 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 4450 3950 50  0001 C CNN
-F 3 "" H 4450 3950 50  0001 C CNN
-F 4 "NONE" H 4450 3950 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 4450 3950 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 4450 3950 60  0001 C CNN "Package"
-F 7 "NONE" H 4450 3950 60  0001 C CNN "Description"
-	1    4450 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C9
-U 1 1 5A778159
-P 5850 1750
-F 0 "C9" H 5860 1820 50  0000 L CNN
-F 1 "100nF" H 5860 1670 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5850 1750 50  0001 C CNN
-F 3 "" H 5850 1750 50  0001 C CNN
-F 4 "NONE" H 5850 1750 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 5850 1750 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 5850 1750 60  0001 C CNN "Package"
-F 7 "NONE" H 5850 1750 60  0001 C CNN "Description"
-	1    5850 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C12
-U 1 1 5A77815F
-P 6450 1750
-F 0 "C12" H 6460 1820 50  0000 L CNN
-F 1 "100nF" H 6460 1670 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 6450 1750 50  0001 C CNN
-F 3 "" H 6450 1750 50  0001 C CNN
-	1    6450 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C15
-U 1 1 5A778165
-P 7050 1750
-F 0 "C15" H 7060 1820 50  0000 L CNN
-F 1 "100nF" H 7060 1670 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7050 1750 50  0001 C CNN
-F 3 "" H 7050 1750 50  0001 C CNN
-	1    7050 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C10
-U 1 1 5A778309
-P 5850 2600
-F 0 "C10" H 5860 2670 50  0000 L CNN
-F 1 "100nF" H 5860 2520 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5850 2600 50  0001 C CNN
-F 3 "" H 5850 2600 50  0001 C CNN
-F 4 "NONE" H 5850 2600 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 5850 2600 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 5850 2600 60  0001 C CNN "Package"
-F 7 "NONE" H 5850 2600 60  0001 C CNN "Description"
-	1    5850 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C13
-U 1 1 5A77830F
-P 6450 2600
-F 0 "C13" H 6460 2670 50  0000 L CNN
-F 1 "100nF" H 6460 2520 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 6450 2600 50  0001 C CNN
-F 3 "" H 6450 2600 50  0001 C CNN
-	1    6450 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C16
-U 1 1 5A778315
-P 7050 2600
-F 0 "C16" H 7060 2670 50  0000 L CNN
-F 1 "100nF" H 7060 2520 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7050 2600 50  0001 C CNN
-F 3 "" H 7050 2600 50  0001 C CNN
-	1    7050 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R9
 U 1 1 5A77863D
 P 5550 1550
 F 0 "R9" V 5630 1550 50  0000 C CNN
 F 1 "5.1k" V 5550 1550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 5480 1550 50  0001 C CNN
-F 3 "" H 5550 1550 50  0001 C CNN
-F 4 "NONE" H 5550 1550 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 5550 1550 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 5550 1550 60  0001 C CNN "Package"
-F 7 "NONE" H 5550 1550 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 5550 1550 50  0001 C CNN
+F 4 "Yageo" H 5550 1550 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-075K1L" H 5550 1550 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 5550 1550 60  0001 C CNN "Package"
+F 7 "RES SMD 5.1K OHM 1% 1/8W 0805" H 5550 1550 60  0001 C CNN "Description"
 	1    5550 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L R R12
-U 1 1 5A7787CA
-P 6150 1550
-F 0 "R12" V 6230 1550 50  0000 C CNN
-F 1 "5.1k" V 6150 1550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6080 1550 50  0001 C CNN
-F 3 "" H 6150 1550 50  0001 C CNN
-F 4 "NONE" H 6150 1550 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 6150 1550 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 6150 1550 60  0001 C CNN "Package"
-F 7 "NONE" H 6150 1550 60  0001 C CNN "Description"
-	1    6150 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L R R16
-U 1 1 5A77883E
-P 6750 1550
-F 0 "R16" V 6830 1550 50  0000 C CNN
-F 1 "5.1k" V 6750 1550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6680 1550 50  0001 C CNN
-F 3 "" H 6750 1550 50  0001 C CNN
-F 4 "NONE" H 6750 1550 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 6750 1550 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 6750 1550 60  0001 C CNN "Package"
-F 7 "NONE" H 6750 1550 60  0001 C CNN "Description"
-	1    6750 1550
 	0    1    1    0   
 $EndComp
 $Comp
@@ -251,42 +123,12 @@ P 5550 2400
 F 0 "R10" V 5630 2400 50  0000 C CNN
 F 1 "3.6k" V 5550 2400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 5480 2400 50  0001 C CNN
-F 3 "" H 5550 2400 50  0001 C CNN
-F 4 "NONE" H 5550 2400 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 5550 2400 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 5550 2400 60  0001 C CNN "Package"
-F 7 "NONE" H 5550 2400 60  0001 C CNN "Description"
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 5550 2400 50  0001 C CNN
+F 4 "Panasonic Electronic Components" H 5550 2400 60  0001 C CNN "Manufacture"
+F 5 "ERA-6AEB362V" H 5550 2400 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 5550 2400 60  0001 C CNN "Package"
+F 7 "RES SMD 3.6K OHM 0.1% 1/8W 0805" H 5550 2400 60  0001 C CNN "Description"
 	1    5550 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L R R13
-U 1 1 5A7791DA
-P 6150 2400
-F 0 "R13" V 6230 2400 50  0000 C CNN
-F 1 "3.6k" V 6150 2400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6080 2400 50  0001 C CNN
-F 3 "" H 6150 2400 50  0001 C CNN
-F 4 "NONE" H 6150 2400 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 6150 2400 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 6150 2400 60  0001 C CNN "Package"
-F 7 "NONE" H 6150 2400 60  0001 C CNN "Description"
-	1    6150 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L R R17
-U 1 1 5A77924B
-P 6750 2400
-F 0 "R17" V 6830 2400 50  0000 C CNN
-F 1 "3.6k" V 6750 2400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6680 2400 50  0001 C CNN
-F 3 "" H 6750 2400 50  0001 C CNN
-F 4 "NONE" H 6750 2400 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 6750 2400 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 6750 2400 60  0001 C CNN "Package"
-F 7 "NONE" H 6750 2400 60  0001 C CNN "Description"
-	1    6750 2400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -389,84 +231,17 @@ F 3 "" H 5850 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C14
-U 1 1 5A775F4A
-P 7050 900
-F 0 "C14" H 7060 970 50  0000 L CNN
-F 1 "100nF" H 7060 820 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7050 900 50  0001 C CNN
-F 3 "" H 7050 900 50  0001 C CNN
-	1    7050 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R15
-U 1 1 5A775F44
-P 6750 700
-F 0 "R15" V 6830 700 50  0000 C CNN
-F 1 "6.2k" V 6750 700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6680 700 50  0001 C CNN
-F 3 "" H 6750 700 50  0001 C CNN
-F 4 "NONE" H 6750 700 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 6750 700 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 6750 700 60  0001 C CNN "Package"
-F 7 "NONE" H 6750 700 60  0001 C CNN "Description"
-	1    6750 700 
-	0    1    1    0   
-$EndComp
-$Comp
-L C_Small C11
-U 1 1 5A775F3E
-P 6450 900
-F 0 "C11" H 6460 970 50  0000 L CNN
-F 1 "100nF" H 6460 820 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 6450 900 50  0001 C CNN
-F 3 "" H 6450 900 50  0001 C CNN
-	1    6450 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R11
-U 1 1 5A775F38
-P 6150 700
-F 0 "R11" V 6230 700 50  0000 C CNN
-F 1 "6.2k" V 6150 700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6080 700 50  0001 C CNN
-F 3 "" H 6150 700 50  0001 C CNN
-F 4 "NONE" H 6150 700 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 6150 700 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 6150 700 60  0001 C CNN "Package"
-F 7 "NONE" H 6150 700 60  0001 C CNN "Description"
-	1    6150 700 
-	0    1    1    0   
-$EndComp
-$Comp
-L C_Small C8
-U 1 1 5A775F32
-P 5850 900
-F 0 "C8" H 5860 970 50  0000 L CNN
-F 1 "100nF" H 5860 820 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5850 900 50  0001 C CNN
-F 3 "" H 5850 900 50  0001 C CNN
-F 4 "NONE" H 5850 900 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 5850 900 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 5850 900 60  0001 C CNN "Package"
-F 7 "NONE" H 5850 900 60  0001 C CNN "Description"
-	1    5850 900 
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R8
 U 1 1 5A775F2C
 P 5550 700
 F 0 "R8" V 5630 700 50  0000 C CNN
 F 1 "6.2k" V 5550 700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 5480 700 50  0001 C CNN
-F 3 "" H 5550 700 50  0001 C CNN
-F 4 "NONE" H 5550 700 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 5550 700 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 5550 700 60  0001 C CNN "Package"
-F 7 "NONE" H 5550 700 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 5550 700 50  0001 C CNN
+F 4 "Yageo" H 5550 700 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-076K2L" H 5550 700 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 5550 700 60  0001 C CNN "Package"
+F 7 "RES SMD 6.2K OHM 1% 1/8W 0805" H 5550 700 60  0001 C CNN "Description"
 	1    5550 700 
 	0    1    1    0   
 $EndComp
@@ -488,27 +263,12 @@ P 1350 1100
 F 0 "C1" H 1360 1170 50  0000 L CNN
 F 1 "4.7uF" H 1360 1020 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1350 1100 50  0001 C CNN
-F 3 "" H 1350 1100 50  0001 C CNN
-F 4 "NONE" H 1350 1100 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 1350 1100 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 1350 1100 60  0001 C CNN "Package"
-F 7 "NONE" H 1350 1100 60  0001 C CNN "Description"
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 1350 1100 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 1350 1100 60  0001 C CNN "Manufacture"
+F 5 "CL21A475KQFNNNG" H 1350 1100 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 1350 1100 60  0001 C CNN "Package"
+F 7 "4.7µF ±10% 6.3V Ceramic Capacitor X5R 0805 " H 1350 1100 60  0001 C CNN "Description"
 	1    1350 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C4
-U 1 1 5A77DE1B
-P 3300 1100
-F 0 "C4" H 3310 1170 50  0000 L CNN
-F 1 "4.7uF" H 3310 1020 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 3300 1100 50  0001 C CNN
-F 3 "" H 3300 1100 50  0001 C CNN
-F 4 "NONE" H 3300 1100 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 3300 1100 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 3300 1100 60  0001 C CNN "Package"
-F 7 "NONE" H 3300 1100 60  0001 C CNN "Description"
-	1    3300 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -518,11 +278,11 @@ P 3000 1500
 F 0 "R6" V 3080 1500 50  0000 C CNN
 F 1 "2k" V 3000 1500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2930 1500 50  0001 C CNN
-F 3 "" H 3000 1500 50  0001 C CNN
-F 4 "NONE" H 3000 1500 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 3000 1500 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 3000 1500 60  0001 C CNN "Package"
-F 7 "NONE" H 3000 1500 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 3000 1500 50  0001 C CNN
+F 4 "Yageo" H 3000 1500 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-072KL" H 3000 1500 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 3000 1500 60  0001 C CNN "Package"
+F 7 "RES SMD 2K OHM 1% 1/8W 0805" H 3000 1500 60  0001 C CNN "Description"
 	1    3000 1500
 	1    0    0    -1  
 $EndComp
@@ -533,11 +293,11 @@ P 1800 1450
 F 0 "R3" V 1880 1450 50  0000 C CNN
 F 1 "470" V 1800 1450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 1730 1450 50  0001 C CNN
-F 3 "" H 1800 1450 50  0001 C CNN
-F 4 "NONE" H 1800 1450 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 1800 1450 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 1800 1450 60  0001 C CNN "Package"
-F 7 "NONE" H 1800 1450 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 1800 1450 50  0001 C CNN
+F 4 "Yageo" H 1800 1450 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-07470RL" H 1800 1450 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 1800 1450 60  0001 C CNN "Package"
+F 7 "RES SMD 470 OHM 1% 1/8W 0805" H 1800 1450 60  0001 C CNN "Description"
 	1    1800 1450
 	1    0    0    -1  
 $EndComp
@@ -546,13 +306,13 @@ L LED_Small D1
 U 1 1 5A77DF5A
 P 1800 1100
 F 0 "D1" H 1750 1225 50  0000 L CNN
-F 1 "RED" H 1625 1000 50  0000 L CNN
+F 1 "BLUE" H 1625 1000 50  0000 L CNN
 F 2 "lib_fp:LED_0805_LIGHTPIPE" V 1800 1100 50  0001 C CNN
-F 3 "" V 1800 1100 50  0001 C CNN
-F 4 "NONE" H 1800 1100 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 1800 1100 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 1800 1100 60  0001 C CNN "Package"
-F 7 "NONE" H 1800 1100 60  0001 C CNN "Description"
+F 3 "http://katalog.we-online.de/led/datasheet/150080BS75000.pdf" V 1800 1100 50  0001 C CNN
+F 4 "Wurth Electronics Inc." H 1800 1100 60  0001 C CNN "Manufacture"
+F 5 "150080BS75000" H 1800 1100 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 1800 1100 60  0001 C CNN "Package"
+F 7 "Blue 470nm LED Indication" H 1800 1100 60  0001 C CNN "Description"
 	1    1800 1100
 	0    -1   -1   0   
 $EndComp
@@ -563,11 +323,11 @@ P 3800 1150
 F 0 "BT1" H 3900 1250 50  0000 L CNN
 F 1 "18650" H 3900 1150 50  0000 L CNN
 F 2 "lib_fp:18650_battery_holder_PCB_Pins" V 3800 1210 50  0001 C CNN
-F 3 "" V 3800 1210 50  0001 C CNN
-F 4 "NONE" H 3800 1150 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 3800 1150 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 3800 1150 60  0001 C CNN "Package"
-F 7 "NONE" H 3800 1150 60  0001 C CNN "Description"
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BH-18650-PC-datasheet.pdf" V 3800 1210 50  0001 C CNN
+F 4 "MPD" H 3800 1150 60  0001 C CNN "Manufacture"
+F 5 "BH-18650-PC-ND" H 3800 1150 60  0001 C CNN "Mfg Part Number"
+F 6 "PC PIN" H 3800 1150 60  0001 C CNN "Package"
+F 7 "HOLDER BATT 18650 1CELL PC PIN" H 3800 1150 60  0001 C CNN "Description"
 	1    3800 1150
 	1    0    0    -1  
 $EndComp
@@ -633,7 +393,11 @@ P 750 1100
 F 0 "J1" H 550 1550 50  0000 L CNN
 F 1 "USB_OTG" H 550 1450 50  0000 L CNN
 F 2 "lib_fp:USB_Micro-B_Amphenol_10118192-0001LF" H 900 1050 50  0001 C CNN
-F 3 "" H 900 1050 50  0001 C CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10118192.pdf" H 900 1050 50  0001 C CNN
+F 4 "Amphenol" H 750 1100 60  0001 C CNN "Manufacture"
+F 5 "10118192-0001LF" H 750 1100 60  0001 C CNN "Mfg Part Number"
+F 6 "USB MICRO B" H 750 1100 60  0001 C CNN "Package"
+F 7 "USB - micro B USB 2.0 Receptacle Connector 5 Position Surface Mount, Right Angle" H 750 1100 60  0001 C CNN "Description"
 	1    750  1100
 	1    0    0    -1  
 $EndComp
@@ -661,7 +425,11 @@ P 4150 2400
 F 0 "U3" H 4400 2050 60  0000 C CNN
 F 1 "TPS78233DDCR" H 4150 2500 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:TSOT-23-5" H 4150 2400 60  0001 C CNN
-F 3 "" H 4150 2400 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps782.pdf" H 4150 2400 60  0001 C CNN
+F 4 "Texas Instruments" H 4150 2400 60  0001 C CNN "Manufacture"
+F 5 "TPS78233DDCR" H 4150 2400 60  0001 C CNN "Mfg Part Number"
+F 6 "SOT23-5" H 4150 2400 60  0001 C CNN "Package"
+F 7 "IC REG LINEAR 3.3V 150MA SOT23-5" H 4150 2400 60  0001 C CNN "Description"
 	1    4150 2400
 	1    0    0    -1  
 $EndComp
@@ -672,27 +440,12 @@ P 3250 2550
 F 0 "C3" H 3260 2620 50  0000 L CNN
 F 1 "1uF" H 3260 2470 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3250 2550 50  0001 C CNN
-F 3 "" H 3250 2550 50  0001 C CNN
-F 4 "NONE" H 3250 2550 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 3250 2550 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 3250 2550 60  0001 C CNN "Package"
-F 7 "NONE" H 3250 2550 60  0001 C CNN "Description"
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 3250 2550 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 3250 2550 60  0001 C CNN "Manufacture"
+F 5 "CL21B105KOFNNNG" H 3250 2550 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 3250 2550 60  0001 C CNN "Package"
+F 7 "CAP CER 1UF 16V X7R 0805" H 3250 2550 60  0001 C CNN "Description"
 	1    3250 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C7
-U 1 1 5A783C2F
-P 4750 2550
-F 0 "C7" H 4760 2620 50  0000 L CNN
-F 1 "1uF" H 4760 2470 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 4750 2550 50  0001 C CNN
-F 3 "" H 4750 2550 50  0001 C CNN
-F 4 "NONE" H 4750 2550 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 4750 2550 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 4750 2550 60  0001 C CNN "Package"
-F 7 "NONE" H 4750 2550 60  0001 C CNN "Description"
-	1    4750 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -759,11 +512,11 @@ P 7000 5900
 F 0 "SW1" H 7050 6000 50  0000 L CNN
 F 1 "PLAY" H 7000 5840 50  0000 C CNN
 F 2 "lib_fp:SWITCH_Panasonic_SMDRight_EVQP7C" H 7000 6100 50  0001 C CNN
-F 3 "" H 7000 6100 50  0001 C CNN
-F 4 "NONE" H 7000 5900 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7000 5900 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7000 5900 60  0001 C CNN "Package"
-F 7 "NONE" H 7000 5900 60  0001 C CNN "Description"
+F 3 "https://www3.panasonic.biz/ac/e_download/control/switch/light-touch/catalog/sw_lt_eng_3529s_side.pdf" H 7000 6100 50  0001 C CNN
+F 4 "Panasonic Electronic Components" H 7000 5900 60  0001 C CNN "Manufacture"
+F 5 "EVQ-P7C01P" H 7000 5900 60  0001 C CNN "Mfg Part Number"
+F 6 "Gull Wing" H 7000 5900 60  0001 C CNN "Package"
+F 7 "SWITCH TACTILE SPST-NO 0.05A 12V" H 7000 5900 60  0001 C CNN "Description"
 	1    7000 5900
 	1    0    0    -1  
 $EndComp
@@ -783,13 +536,13 @@ L LED D3
 U 1 1 5A78B290
 P 7000 5450
 F 0 "D3" H 7000 5550 50  0000 C CNN
-F 1 "PLAYING" H 7000 5350 50  0000 C CNN
+F 1 "GREEN" H 7000 5350 50  0000 C CNN
 F 2 "lib_fp:LED_0805_LIGHTPIPE" H 7000 5450 50  0001 C CNN
-F 3 "" H 7000 5450 50  0001 C CNN
-F 4 "NONE" H 7000 5450 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7000 5450 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7000 5450 60  0001 C CNN "Package"
-F 7 "NONE" H 7000 5450 60  0001 C CNN "Description"
+F 3 "http://katalog.we-online.de/led/datasheet/150080GS75000.pdf" H 7000 5450 50  0001 C CNN
+F 4 "Wurth Electronics Inc." H 7000 5450 60  0001 C CNN "Manufacture"
+F 5 "150080GS75000" H 7000 5450 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 7000 5450 60  0001 C CNN "Package"
+F 7 "LED GREEN CLEAR 0805 SMD" H 7000 5450 60  0001 C CNN "Description"
 	1    7000 5450
 	-1   0    0    1   
 $EndComp
@@ -805,21 +558,6 @@ F 3 "" H 7300 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R14
-U 1 1 5A78B5CD
-P 6650 5450
-F 0 "R14" V 6730 5450 50  0000 C CNN
-F 1 "1k" V 6650 5450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 6580 5450 50  0001 C CNN
-F 3 "" H 6650 5450 50  0001 C CNN
-F 4 "NONE" H 6650 5450 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 6650 5450 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 6650 5450 60  0001 C CNN "Package"
-F 7 "NONE" H 6650 5450 60  0001 C CNN "Description"
-	1    6650 5450
-	0    1    1    0   
-$EndComp
-$Comp
 L Conn_01x04 J2
 U 1 1 5A7917E8
 P 4900 5750
@@ -827,10 +565,8 @@ F 0 "J2" H 4900 5950 50  0000 C CNN
 F 1 "PROG" H 4900 5450 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 4900 5750 50  0001 C CNN
 F 3 "" H 4900 5750 50  0001 C CNN
-F 4 "NONE" H 4900 5750 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 4900 5750 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 4900 5750 60  0001 C CNN "Package"
-F 7 "NONE" H 4900 5750 60  0001 C CNN "Description"
+F 4 "PC PIN" H 4900 5750 60  0001 C CNN "Package"
+F 5 "CONN HEADER 4 POS 2.54" H 4900 5750 60  0001 C CNN "Description"
 	1    4900 5750
 	-1   0    0    -1  
 $EndComp
@@ -853,10 +589,8 @@ F 0 "JP2" H 5650 5580 50  0000 C CNN
 F 1 "PROG_PWR" H 5660 5440 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5650 5500 50  0001 C CNN
 F 3 "" H 5650 5500 50  0001 C CNN
-F 4 "NONE" H 5650 5500 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 5650 5500 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 5650 5500 60  0001 C CNN "Package"
-F 7 "NONE" H 5650 5500 60  0001 C CNN "Description"
+F 4 "PC PIN" H 5650 5500 60  0001 C CNN "Package"
+F 5 "CONN HEADER 2 POS 2.54" H 5650 5500 60  0001 C CNN "Description"
 	1    5650 5500
 	-1   0    0    -1  
 $EndComp
@@ -881,10 +615,6 @@ F 0 "R7" V 4330 4000 50  0000 C CNN
 F 1 "47k" V 4250 4000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 4180 4000 50  0001 C CNN
 F 3 "" H 4250 4000 50  0001 C CNN
-F 4 "NONE" H 4250 4000 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 4250 4000 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 4250 4000 60  0001 C CNN "Package"
-F 7 "NONE" H 4250 4000 60  0001 C CNN "Description"
 	1    4250 4000
 	1    0    0    -1  
 $EndComp
@@ -897,7 +627,11 @@ P 9300 1150
 F 0 "U5" H 9550 50  60  0000 C CNN
 F 1 "TPA6211A1" H 9300 1000 60  0000 C CNN
 F 2 "lib_fp:TPA6211A1_MSOP" H 9300 1150 60  0001 C CNN
-F 3 "" H 9300 1150 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpa6211a1.pdf" H 9300 1150 60  0001 C CNN
+F 4 "Texas Instruments" H 9300 1150 60  0001 C CNN "Manufacture"
+F 5 "TPA6211A1DGNR" H 9300 1150 60  0001 C CNN "Mfg Part Number"
+F 6 "8MSOP" H 9300 1150 60  0001 C CNN "Package"
+F 7 "IC AMP AUDIO PWR 3.1W MONO 8MSOP" H 9300 1150 60  0001 C CNN "Description"
 	1    9300 1150
 	1    0    0    -1  
 $EndComp
@@ -913,21 +647,6 @@ F 3 "" H 9900 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C19
-U 1 1 5A7BAF6E
-P 8750 2300
-F 0 "C19" H 8760 2370 50  0000 L CNN
-F 1 "0.22uF" H 8760 2220 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 8750 2300 50  0001 C CNN
-F 3 "" H 8750 2300 50  0001 C CNN
-F 4 "NONE" H 8750 2300 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 8750 2300 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 8750 2300 60  0001 C CNN "Package"
-F 7 "NONE" H 8750 2300 60  0001 C CNN "Description"
-	1    8750 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR028
 U 1 1 5A7BB2D3
 P 8750 2450
@@ -936,21 +655,6 @@ F 1 "GND" H 8750 2300 50  0000 C CNN
 F 2 "" H 8750 2450 50  0001 C CNN
 F 3 "" H 8750 2450 50  0001 C CNN
 	1    8750 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C20
-U 1 1 5A7BBAB9
-P 9900 1300
-F 0 "C20" H 9910 1370 50  0000 L CNN
-F 1 "1uF" H 9910 1220 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 9900 1300 50  0001 C CNN
-F 3 "" H 9900 1300 50  0001 C CNN
-F 4 "NONE" H 9900 1300 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 9900 1300 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 9900 1300 60  0001 C CNN "Package"
-F 7 "NONE" H 9900 1300 60  0001 C CNN "Description"
-	1    9900 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -982,7 +686,11 @@ P 7550 1550
 F 0 "C17" V 7650 1500 50  0000 L CNN
 F 1 "0.22uF" V 7450 1400 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 7550 1550 50  0001 C CNN
-F 3 "" H 7550 1550 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 7550 1550 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7550 1550 60  0001 C CNN "Manufacture"
+F 5 "CL21B224KAFNNNG" H 7550 1550 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 7550 1550 60  0001 C CNN "Package"
+F 7 "CAP CER 0.22UF 25V X7R 0805" H 7550 1550 60  0001 C CNN "Description"
 	1    7550 1550
 	0    -1   -1   0   
 $EndComp
@@ -993,7 +701,11 @@ P 7550 1900
 F 0 "C18" H 7560 1970 50  0000 L CNN
 F 1 "0.22uF" H 7560 1820 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 7550 1900 50  0001 C CNN
-F 3 "" H 7550 1900 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 7550 1900 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7550 1900 60  0001 C CNN "Manufacture"
+F 5 "CL21B224KAFNNNG" H 7550 1900 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 7550 1900 60  0001 C CNN "Package"
+F 7 "CAP CER 0.22UF 25V X7R 0805" H 7550 1900 60  0001 C CNN "Description"
 	1    7550 1900
 	1    0    0    -1  
 $EndComp
@@ -1015,11 +727,11 @@ P 600 3300
 F 0 "R1" V 680 3300 50  0000 C CNN
 F 1 "100K" V 600 3300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 530 3300 50  0001 C CNN
-F 3 "" H 600 3300 50  0001 C CNN
-F 4 "NONE" H 600 3300 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 600 3300 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 600 3300 60  0001 C CNN "Package"
-F 7 "NONE" H 600 3300 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 600 3300 50  0001 C CNN
+F 4 "Yageo" H 600 3300 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-07100KL" H 600 3300 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 600 3300 60  0001 C CNN "Package"
+F 7 "RES SMD 100K OHM 1% 1/8W 0805" H 600 3300 60  0001 C CNN "Description"
 	1    600  3300
 	1    0    0    -1  
 $EndComp
@@ -1030,11 +742,11 @@ P 600 3700
 F 0 "R2" V 680 3700 50  0000 C CNN
 F 1 "56K" V 600 3700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 530 3700 50  0001 C CNN
-F 3 "" H 600 3700 50  0001 C CNN
-F 4 "NONE" H 600 3700 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 600 3700 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 600 3700 60  0001 C CNN "Package"
-F 7 "NONE" H 600 3700 60  0001 C CNN "Description"
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr_g.pdf" H 600 3700 50  0001 C CNN
+F 4 "Rohm Semiconductor" H 600 3700 60  0001 C CNN "Manufacture"
+F 5 "MCR10ERTF5602" H 600 3700 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 600 3700 60  0001 C CNN "Package"
+F 7 "RES SMD 56K OHM 1% 1/8W 0805" H 600 3700 60  0001 C CNN "Description"
 	1    600  3700
 	1    0    0    -1  
 $EndComp
@@ -1105,27 +817,12 @@ P 1400 3400
 F 0 "U1" H 1400 3600 50  0000 L CNN
 F 1 "MIC7221" H 1400 3200 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 1400 3400 50  0001 C CNN
-F 3 "" H 1400 3400 50  0001 C CNN
-F 4 "NONE" H 1400 3400 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 1400 3400 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 1400 3400 60  0001 C CNN "Package"
-F 7 "NONE" H 1400 3400 60  0001 C CNN "Description"
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580607" H 1400 3400 50  0001 C CNN
+F 4 "Microchip Technology" H 1400 3400 60  0001 C CNN "Manufacture"
+F 5 "MIC7221YM5-TR" H 1400 3400 60  0001 C CNN "Mfg Part Number"
+F 6 "SOT-23-5" H 1400 3400 60  0001 C CNN "Package"
+F 7 "IC COMPARATOR R-R SOT-23-5" H 1400 3400 60  0001 C CNN "Description"
 	1    1400 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R4
-U 1 1 5A80136A
-P 1800 3150
-F 0 "R4" V 1880 3150 50  0000 C CNN
-F 1 "100K" V 1800 3150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 1730 3150 50  0001 C CNN
-F 3 "" H 1800 3150 50  0001 C CNN
-F 4 "NONE" H 1800 3150 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 1800 3150 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 1800 3150 60  0001 C CNN "Package"
-F 7 "NONE" H 1800 3150 60  0001 C CNN "Description"
-	1    1800 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1133,9 +830,13 @@ L LED D2
 U 1 1 5A801405
 P 2250 3000
 F 0 "D2" H 2250 3100 50  0000 C CNN
-F 1 "LED" H 2250 2900 50  0000 C CNN
+F 1 "RED" H 2250 2900 50  0000 C CNN
 F 2 "lib_fp:LED_0805_LIGHTPIPE" H 2250 3000 50  0001 C CNN
-F 3 "" H 2250 3000 50  0001 C CNN
+F 3 "http://katalog.we-online.de/led/datasheet/150080RS75000.pdf" H 2250 3000 50  0001 C CNN
+F 4 "Wurth Electronics Inc." H 2250 3000 60  0001 C CNN "Manufacture"
+F 5 "150080RS75000" H 2250 3000 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 2250 3000 60  0001 C CNN "Package"
+F 7 "LED RED CLEAR 0805 SMD" H 2250 3000 60  0001 C CNN "Description"
 	1    2250 3000
 	0    -1   -1   0   
 $EndComp
@@ -1194,7 +895,11 @@ P 2150 3400
 F 0 "Q1" H 2350 3475 50  0000 L CNN
 F 1 "2N7002" H 2350 3400 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 2350 3325 50  0001 L CIN
-F 3 "" H 2150 3400 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/71333/2n7002k.pdf" H 2150 3400 50  0001 L CNN
+F 4 "Vishay Siliconix" H 2150 3400 60  0001 C CNN "Manufacture"
+F 5 "2N7002K-T1-E3" H 2150 3400 60  0001 C CNN "Mfg Part Number"
+F 6 "SOT-23" H 2150 3400 60  0001 C CNN "Package"
+F 7 "MOSFET N-CH 60V 300MA SOT-23" H 2150 3400 60  0001 C CNN "Description"
 	1    2150 3400
 	1    0    0    -1  
 $EndComp
@@ -1205,11 +910,11 @@ P 2250 2650
 F 0 "R5" V 2330 2650 50  0000 C CNN
 F 1 "1K" V 2250 2650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2180 2650 50  0001 C CNN
-F 3 "" H 2250 2650 50  0001 C CNN
-F 4 "NONE" H 2250 2650 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 2250 2650 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 2250 2650 60  0001 C CNN "Package"
-F 7 "NONE" H 2250 2650 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 2250 2650 50  0001 C CNN
+F 4 "https://www.digikey.com/en/supplier-centers/y/yageo" H 2250 2650 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-071KL" H 2250 2650 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 2250 2650 60  0001 C CNN "Package"
+F 7 "RES SMD 1K OHM 1% 1/8W 0805" H 2250 2650 60  0001 C CNN "Description"
 	1    2250 2650
 	1    0    0    -1  
 $EndComp
@@ -1233,11 +938,11 @@ P 1450 2800
 F 0 "C2" H 1460 2870 50  0000 L CNN
 F 1 "100nF" H 1460 2720 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 1450 2800 50  0001 C CNN
-F 3 "" H 1450 2800 50  0001 C CNN
-F 4 "NONE" H 1450 2800 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 1450 2800 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 1450 2800 60  0001 C CNN "Package"
-F 7 "NONE" H 1450 2800 60  0001 C CNN "Description"
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 1450 2800 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 1450 2800 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 1450 2800 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 1450 2800 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 1450 2800 60  0001 C CNN "Description"
 	1    1450 2800
 	1    0    0    -1  
 $EndComp
@@ -1262,10 +967,6 @@ F 0 "TP1" V 7000 3900 50  0000 C CNN
 F 1 "P1.1" V 7050 4100 50  0000 C CNN
 F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 3850 50  0001 C CNN
 F 3 "" H 7250 3850 50  0001 C CNN
-F 4 "NONE" H 7050 3850 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7050 3850 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7050 3850 60  0001 C CNN "Package"
-F 7 "NONE" H 7050 3850 60  0001 C CNN "Description"
 	1    7050 3850
 	0    1    1    0   
 $EndComp
@@ -1277,10 +978,6 @@ F 0 "TP2" V 7000 4200 50  0000 C CNN
 F 1 "P1.4" V 7050 4400 50  0000 C CNN
 F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 4150 50  0001 C CNN
 F 3 "" H 7250 4150 50  0001 C CNN
-F 4 "NONE" H 7050 4150 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7050 4150 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7050 4150 60  0001 C CNN "Package"
-F 7 "NONE" H 7050 4150 60  0001 C CNN "Description"
 	1    7050 4150
 	0    1    1    0   
 $EndComp
@@ -1292,10 +989,6 @@ F 0 "TP3" V 7000 4400 50  0000 C CNN
 F 1 "P1.6" V 7050 4600 50  0000 C CNN
 F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 4350 50  0001 C CNN
 F 3 "" H 7250 4350 50  0001 C CNN
-F 4 "NONE" H 7050 4350 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7050 4350 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7050 4350 60  0001 C CNN "Package"
-F 7 "NONE" H 7050 4350 60  0001 C CNN "Description"
 	1    7050 4350
 	0    1    1    0   
 $EndComp
@@ -1307,10 +1000,6 @@ F 0 "TP4" V 7000 4900 50  0000 C CNN
 F 1 "P2.6" V 7050 5100 50  0000 C CNN
 F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 4850 50  0001 C CNN
 F 3 "" H 7250 4850 50  0001 C CNN
-F 4 "NONE" H 7050 4850 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7050 4850 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7050 4850 60  0001 C CNN "Package"
-F 7 "NONE" H 7050 4850 60  0001 C CNN "Description"
 	1    7050 4850
 	0    1    1    0   
 $EndComp
@@ -1322,10 +1011,6 @@ F 0 "TP5" V 7000 5000 50  0000 C CNN
 F 1 "P2.7" V 7050 5200 50  0000 C CNN
 F 2 "Connectors_TestPoints:Test_Point_Pad_d1.5mm" H 7250 4950 50  0001 C CNN
 F 3 "" H 7250 4950 50  0001 C CNN
-F 4 "NONE" H 7050 4950 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7050 4950 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7050 4950 60  0001 C CNN "Package"
-F 7 "NONE" H 7050 4950 60  0001 C CNN "Description"
 	1    7050 4950
 	0    1    1    0   
 $EndComp
@@ -1338,11 +1023,11 @@ P 3050 2400
 F 0 "JP1" H 3050 2480 50  0000 C CNN
 F 1 "LDO_EN" H 3060 2340 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" H 3050 2400 50  0001 C CNN
-F 3 "" H 3050 2400 50  0001 C CNN
-F 4 "NONE" H 3050 2400 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 3050 2400 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 3050 2400 60  0001 C CNN "Package"
-F 7 "NONE" H 3050 2400 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 3050 2400 50  0001 C CNN
+F 4 "Yageo" H 3050 2400 60  0001 C CNN "Manufacture"
+F 5 "RC1206JR-070RL" H 3050 2400 60  0001 C CNN "Mfg Part Number"
+F 6 "1206" H 3050 2400 60  0001 C CNN "Package"
+F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 3050 2400 60  0001 C CNN "Description"
 	1    3050 2400
 	1    0    0    -1  
 $EndComp
@@ -1372,11 +1057,11 @@ P 8150 650
 F 0 "R18" V 8230 650 50  0000 C CNN
 F 1 "10k" V 8150 650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8080 650 50  0001 C CNN
-F 3 "" H 8150 650 50  0001 C CNN
-F 4 "NONE" H 8150 650 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 8150 650 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 8150 650 60  0001 C CNN "Package"
-F 7 "NONE" H 8150 650 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 8150 650 50  0001 C CNN
+F 4 "Yageo" H 8150 650 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-0710KL" H 8150 650 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 8150 650 60  0001 C CNN "Package"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 650 60  0001 C CNN "Description"
 	1    8150 650 
 	0    1    1    0   
 $EndComp
@@ -1396,21 +1081,6 @@ F 7 "NONE" H 7950 1100 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R19
-U 1 1 5A83362D
-P 8150 950
-F 0 "R19" V 8230 950 50  0000 C CNN
-F 1 "10k" V 8150 950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8080 950 50  0001 C CNN
-F 3 "" H 8150 950 50  0001 C CNN
-F 4 "NONE" H 8150 950 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 8150 950 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 8150 950 60  0001 C CNN "Package"
-F 7 "NONE" H 8150 950 60  0001 C CNN "Description"
-	1    8150 950 
-	0    1    1    0   
-$EndComp
-$Comp
 L Jumper_NO_Small JP3
 U 1 1 5A83370F
 P 7950 1400
@@ -1423,36 +1093,6 @@ F 5 "NONE" H 7950 1400 60  0001 C CNN "Mfg Part Number"
 F 6 "NONE" H 7950 1400 60  0001 C CNN "Package"
 F 7 "NONE" H 7950 1400 60  0001 C CNN "Description"
 	1    7950 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L R R20
-U 1 1 5A833715
-P 8150 1250
-F 0 "R20" V 8230 1250 50  0000 C CNN
-F 1 "10k" V 8150 1250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8080 1250 50  0001 C CNN
-F 3 "" H 8150 1250 50  0001 C CNN
-F 4 "NONE" H 8150 1250 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 8150 1250 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 8150 1250 60  0001 C CNN "Package"
-F 7 "NONE" H 8150 1250 60  0001 C CNN "Description"
-	1    8150 1250
-	0    1    1    0   
-$EndComp
-$Comp
-L R R21
-U 1 1 5A833B9B
-P 8150 1550
-F 0 "R21" V 8230 1550 50  0000 C CNN
-F 1 "10k" V 8150 1550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8080 1550 50  0001 C CNN
-F 3 "" H 8150 1550 50  0001 C CNN
-F 4 "NONE" H 8150 1550 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 8150 1550 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 8150 1550 60  0001 C CNN "Package"
-F 7 "NONE" H 8150 1550 60  0001 C CNN "Description"
-	1    8150 1550
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1471,21 +1111,6 @@ F 7 "NONE" H 7950 1900 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R22
-U 1 1 5A83A0BD
-P 8150 1750
-F 0 "R22" V 8230 1750 50  0000 C CNN
-F 1 "10k" V 8150 1750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8080 1750 50  0001 C CNN
-F 3 "" H 8150 1750 50  0001 C CNN
-F 4 "NONE" H 8150 1750 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 8150 1750 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 8150 1750 60  0001 C CNN "Package"
-F 7 "NONE" H 8150 1750 60  0001 C CNN "Description"
-	1    8150 1750
-	0    1    1    0   
-$EndComp
-$Comp
 L Jumper_NO_Small JP7
 U 1 1 5A83A0C7
 P 7950 2200
@@ -1501,21 +1126,6 @@ F 7 "NONE" H 7950 2200 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L R R23
-U 1 1 5A83A0D1
-P 8150 2050
-F 0 "R23" V 8230 2050 50  0000 C CNN
-F 1 "10k" V 8150 2050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8080 2050 50  0001 C CNN
-F 3 "" H 8150 2050 50  0001 C CNN
-F 4 "NONE" H 8150 2050 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 8150 2050 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 8150 2050 60  0001 C CNN "Package"
-F 7 "NONE" H 8150 2050 60  0001 C CNN "Description"
-	1    8150 2050
-	0    1    1    0   
-$EndComp
-$Comp
 L Jumper_NO_Small JP6
 U 1 1 5A83A0DB
 P 7950 2500
@@ -1528,36 +1138,6 @@ F 5 "NONE" H 7950 2500 60  0001 C CNN "Mfg Part Number"
 F 6 "NONE" H 7950 2500 60  0001 C CNN "Package"
 F 7 "NONE" H 7950 2500 60  0001 C CNN "Description"
 	1    7950 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L R R24
-U 1 1 5A83A0E5
-P 8150 2350
-F 0 "R24" V 8230 2350 50  0000 C CNN
-F 1 "10k" V 8150 2350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8080 2350 50  0001 C CNN
-F 3 "" H 8150 2350 50  0001 C CNN
-F 4 "NONE" H 8150 2350 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 8150 2350 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 8150 2350 60  0001 C CNN "Package"
-F 7 "NONE" H 8150 2350 60  0001 C CNN "Description"
-	1    8150 2350
-	0    1    1    0   
-$EndComp
-$Comp
-L R R25
-U 1 1 5A83A0EF
-P 8150 2650
-F 0 "R25" V 8230 2650 50  0000 C CNN
-F 1 "10k" V 8150 2650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 8080 2650 50  0001 C CNN
-F 3 "" H 8150 2650 50  0001 C CNN
-F 4 "NONE" H 8150 2650 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 8150 2650 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 8150 2650 60  0001 C CNN "Package"
-F 7 "NONE" H 8150 2650 60  0001 C CNN "Description"
-	1    8150 2650
 	0    1    1    0   
 $EndComp
 Text Notes 9050 2850 0    50   ~ 0
@@ -2054,4 +1634,454 @@ Text Notes 10300 3150 0    50   ~ 0
 X
 Text Notes 10300 3050 0    50   ~ 0
 X
+$Comp
+L C_Small C4
+U 1 1 5A8B9C6D
+P 3300 1100
+F 0 "C4" H 3310 1170 50  0000 L CNN
+F 1 "4.7uF" H 3310 1020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3300 1100 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 3300 1100 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 3300 1100 60  0001 C CNN "Manufacture"
+F 5 "CL21A475KQFNNNG" H 3300 1100 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 3300 1100 60  0001 C CNN "Package"
+F 7 "4.7µF ±10% 6.3V Ceramic Capacitor X5R 0805 " H 3300 1100 60  0001 C CNN "Description"
+	1    3300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5A8BB0D0
+P 1800 3150
+F 0 "R4" V 1880 3150 50  0000 C CNN
+F 1 "100K" V 1800 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1730 3150 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 1800 3150 50  0001 C CNN
+F 4 "Yageo" H 1800 3150 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-07100KL" H 1800 3150 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 1800 3150 60  0001 C CNN "Package"
+F 7 "RES SMD 100K OHM 1% 1/8W 0805" H 1800 3150 60  0001 C CNN "Description"
+	1    1800 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 5A8BD6C5
+P 4750 2550
+F 0 "C7" H 4760 2620 50  0000 L CNN
+F 1 "1uF" H 4760 2470 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4750 2550 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 4750 2550 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 4750 2550 60  0001 C CNN "Manufacture"
+F 5 "CL21B105KOFNNNG" H 4750 2550 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 4750 2550 60  0001 C CNN "Package"
+F 7 "CAP CER 1UF 16V X7R 0805" H 4750 2550 60  0001 C CNN "Description"
+	1    4750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C5
+U 1 1 5A8BF290
+P 4450 3950
+F 0 "C5" H 4460 4020 50  0000 L CNN
+F 1 "1uF" H 4460 3870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4450 3950 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 4450 3950 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 4450 3950 60  0001 C CNN "Manufacture"
+F 5 "CL21B105KOFNNNG" H 4450 3950 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 4450 3950 60  0001 C CNN "Package"
+F 7 "CAP CER 1UF 16V X7R 0805" H 4450 3950 60  0001 C CNN "Description"
+	1    4450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 5A8BFFC7
+P 4700 3950
+F 0 "C6" H 4710 4020 50  0000 L CNN
+F 1 "100nF" H 4710 3870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4700 3950 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 4700 3950 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 4700 3950 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 4700 3950 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 4700 3950 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 4700 3950 60  0001 C CNN "Description"
+	1    4700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 5A8C247F
+P 6650 5450
+F 0 "R14" V 6730 5450 50  0000 C CNN
+F 1 "1K" V 6650 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6580 5450 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 6650 5450 50  0001 C CNN
+F 4 "https://www.digikey.com/en/supplier-centers/y/yageo" H 6650 5450 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-071KL" H 6650 5450 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 6650 5450 60  0001 C CNN "Package"
+F 7 "RES SMD 1K OHM 1% 1/8W 0805" H 6650 5450 60  0001 C CNN "Description"
+	1    6650 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C8
+U 1 1 5A8C532B
+P 5850 900
+F 0 "C8" H 5860 970 50  0000 L CNN
+F 1 "100nF" H 5860 820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5850 900 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 5850 900 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 5850 900 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 5850 900 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 5850 900 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 5850 900 60  0001 C CNN "Description"
+	1    5850 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C11
+U 1 1 5A8C588E
+P 6450 900
+F 0 "C11" H 6460 970 50  0000 L CNN
+F 1 "100nF" H 6460 820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6450 900 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 6450 900 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 6450 900 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 6450 900 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 6450 900 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 6450 900 60  0001 C CNN "Description"
+	1    6450 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C14
+U 1 1 5A8C5990
+P 7050 900
+F 0 "C14" H 7060 970 50  0000 L CNN
+F 1 "100nF" H 7060 820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7050 900 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 7050 900 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7050 900 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 7050 900 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 7050 900 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 7050 900 60  0001 C CNN "Description"
+	1    7050 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C9
+U 1 1 5A8C7513
+P 5850 1750
+F 0 "C9" H 5860 1820 50  0000 L CNN
+F 1 "100nF" H 5860 1670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5850 1750 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 5850 1750 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 5850 1750 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 5850 1750 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 5850 1750 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 5850 1750 60  0001 C CNN "Description"
+	1    5850 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C12
+U 1 1 5A8C7D40
+P 6450 1750
+F 0 "C12" H 6460 1820 50  0000 L CNN
+F 1 "100nF" H 6460 1670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6450 1750 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 6450 1750 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 6450 1750 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 6450 1750 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 6450 1750 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 6450 1750 60  0001 C CNN "Description"
+	1    6450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C15
+U 1 1 5A8C8037
+P 7050 1750
+F 0 "C15" H 7060 1820 50  0000 L CNN
+F 1 "100nF" H 7060 1670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7050 1750 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 7050 1750 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7050 1750 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 7050 1750 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 7050 1750 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 7050 1750 60  0001 C CNN "Description"
+	1    7050 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C10
+U 1 1 5A8C8CBF
+P 5850 2600
+F 0 "C10" H 5860 2670 50  0000 L CNN
+F 1 "100nF" H 5860 2520 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5850 2600 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 5850 2600 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 5850 2600 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 5850 2600 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 5850 2600 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 5850 2600 60  0001 C CNN "Description"
+	1    5850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C13
+U 1 1 5A8C94A0
+P 6450 2600
+F 0 "C13" H 6460 2670 50  0000 L CNN
+F 1 "100nF" H 6460 2520 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6450 2600 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 6450 2600 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 6450 2600 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 6450 2600 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 6450 2600 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 6450 2600 60  0001 C CNN "Description"
+	1    6450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C16
+U 1 1 5A8C9A15
+P 7050 2600
+F 0 "C16" H 7060 2670 50  0000 L CNN
+F 1 "100nF" H 7060 2520 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7050 2600 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 7050 2600 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 7050 2600 60  0001 C CNN "Manufacture"
+F 5 "CL21B104KOANNNC" H 7050 2600 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 7050 2600 60  0001 C CNN "Package"
+F 7 "CAP CER 0.1UF 16V X7R 0805" H 7050 2600 60  0001 C CNN "Description"
+	1    7050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 5A8CB2CC
+P 6150 700
+F 0 "R11" V 6230 700 50  0000 C CNN
+F 1 "6.2k" V 6150 700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6080 700 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 6150 700 50  0001 C CNN
+F 4 "Yageo" H 6150 700 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-076K2L" H 6150 700 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 6150 700 60  0001 C CNN "Package"
+F 7 "RES SMD 6.2K OHM 1% 1/8W 0805" H 6150 700 60  0001 C CNN "Description"
+	1    6150 700 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R15
+U 1 1 5A8CB861
+P 6750 700
+F 0 "R15" V 6830 700 50  0000 C CNN
+F 1 "6.2k" V 6750 700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6680 700 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 6750 700 50  0001 C CNN
+F 4 "Yageo" H 6750 700 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-076K2L" H 6750 700 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 6750 700 60  0001 C CNN "Package"
+F 7 "RES SMD 6.2K OHM 1% 1/8W 0805" H 6750 700 60  0001 C CNN "Description"
+	1    6750 700 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R12
+U 1 1 5A8CE206
+P 6150 1550
+F 0 "R12" V 6230 1550 50  0000 C CNN
+F 1 "5.1k" V 6150 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6080 1550 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 6150 1550 50  0001 C CNN
+F 4 "Yageo" H 6150 1550 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-075K1L" H 6150 1550 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 6150 1550 60  0001 C CNN "Package"
+F 7 "RES SMD 5.1K OHM 1% 1/8W 0805" H 6150 1550 60  0001 C CNN "Description"
+	1    6150 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R16
+U 1 1 5A8CE945
+P 6750 1550
+F 0 "R16" V 6830 1550 50  0000 C CNN
+F 1 "5.1k" V 6750 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6680 1550 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 6750 1550 50  0001 C CNN
+F 4 "Yageo" H 6750 1550 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-075K1L" H 6750 1550 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 6750 1550 60  0001 C CNN "Package"
+F 7 "RES SMD 5.1K OHM 1% 1/8W 0805" H 6750 1550 60  0001 C CNN "Description"
+	1    6750 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R13
+U 1 1 5A8D079C
+P 6150 2400
+F 0 "R13" V 6230 2400 50  0000 C CNN
+F 1 "3.6k" V 6150 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6080 2400 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 6150 2400 50  0001 C CNN
+F 4 "Panasonic Electronic Components" H 6150 2400 60  0001 C CNN "Manufacture"
+F 5 "ERA-6AEB362V" H 6150 2400 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 6150 2400 60  0001 C CNN "Package"
+F 7 "RES SMD 3.6K OHM 0.1% 1/8W 0805" H 6150 2400 60  0001 C CNN "Description"
+	1    6150 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R17
+U 1 1 5A8D0F61
+P 6750 2400
+F 0 "R17" V 6830 2400 50  0000 C CNN
+F 1 "3.6k" V 6750 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6680 2400 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 6750 2400 50  0001 C CNN
+F 4 "Panasonic Electronic Components" H 6750 2400 60  0001 C CNN "Manufacture"
+F 5 "ERA-6AEB362V" H 6750 2400 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 6750 2400 60  0001 C CNN "Package"
+F 7 "RES SMD 3.6K OHM 0.1% 1/8W 0805" H 6750 2400 60  0001 C CNN "Description"
+	1    6750 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C19
+U 1 1 5A8D3C65
+P 8750 2300
+F 0 "C19" H 8760 2370 50  0000 L CNN
+F 1 "0.22uF" H 8760 2220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 8750 2300 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 8750 2300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 8750 2300 60  0001 C CNN "Manufacture"
+F 5 "CL21B224KAFNNNG" H 8750 2300 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 8750 2300 60  0001 C CNN "Package"
+F 7 "CAP CER 0.22UF 25V X7R 0805" H 8750 2300 60  0001 C CNN "Description"
+	1    8750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C20
+U 1 1 5A8D4A1F
+P 9900 1300
+F 0 "C20" H 9910 1370 50  0000 L CNN
+F 1 "1uF" H 9910 1220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9900 1300 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 9900 1300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 9900 1300 60  0001 C CNN "Manufacture"
+F 5 "CL21B105KOFNNNG" H 9900 1300 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 9900 1300 60  0001 C CNN "Package"
+F 7 "CAP CER 1UF 16V X7R 0805" H 9900 1300 60  0001 C CNN "Description"
+	1    9900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 5A8D76FD
+P 8150 950
+F 0 "R19" V 8230 950 50  0000 C CNN
+F 1 "10k" V 8150 950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8080 950 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 8150 950 50  0001 C CNN
+F 4 "Yageo" H 8150 950 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-0710KL" H 8150 950 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 8150 950 60  0001 C CNN "Package"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 950 60  0001 C CNN "Description"
+	1    8150 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R20
+U 1 1 5A8D7E40
+P 8150 1250
+F 0 "R20" V 8230 1250 50  0000 C CNN
+F 1 "10k" V 8150 1250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8080 1250 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 8150 1250 50  0001 C CNN
+F 4 "Yageo" H 8150 1250 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-0710KL" H 8150 1250 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 8150 1250 60  0001 C CNN "Package"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 1250 60  0001 C CNN "Description"
+	1    8150 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R21
+U 1 1 5A8D83AE
+P 8150 1550
+F 0 "R21" V 8230 1550 50  0000 C CNN
+F 1 "10k" V 8150 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8080 1550 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 8150 1550 50  0001 C CNN
+F 4 "Yageo" H 8150 1550 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-0710KL" H 8150 1550 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 8150 1550 60  0001 C CNN "Package"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 1550 60  0001 C CNN "Description"
+	1    8150 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R22
+U 1 1 5A8D8B66
+P 8150 1750
+F 0 "R22" V 8230 1750 50  0000 C CNN
+F 1 "10k" V 8150 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8080 1750 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 8150 1750 50  0001 C CNN
+F 4 "Yageo" H 8150 1750 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-0710KL" H 8150 1750 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 8150 1750 60  0001 C CNN "Package"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 1750 60  0001 C CNN "Description"
+	1    8150 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R23
+U 1 1 5A8D96A9
+P 8150 2050
+F 0 "R23" V 8230 2050 50  0000 C CNN
+F 1 "10k" V 8150 2050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8080 2050 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 8150 2050 50  0001 C CNN
+F 4 "Yageo" H 8150 2050 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-0710KL" H 8150 2050 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 8150 2050 60  0001 C CNN "Package"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 2050 60  0001 C CNN "Description"
+	1    8150 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R24
+U 1 1 5A8D99AE
+P 8150 2350
+F 0 "R24" V 8230 2350 50  0000 C CNN
+F 1 "10k" V 8150 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8080 2350 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 8150 2350 50  0001 C CNN
+F 4 "Yageo" H 8150 2350 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-0710KL" H 8150 2350 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 8150 2350 60  0001 C CNN "Package"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 2350 60  0001 C CNN "Description"
+	1    8150 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R25
+U 1 1 5A8D9CA3
+P 8150 2650
+F 0 "R25" V 8230 2650 50  0000 C CNN
+F 1 "10k" V 8150 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8080 2650 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 8150 2650 50  0001 C CNN
+F 4 "Yageo" H 8150 2650 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-0710KL" H 8150 2650 60  0001 C CNN "Mfg Part Number"
+F 6 "0805" H 8150 2650 60  0001 C CNN "Package"
+F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 2650 60  0001 C CNN "Description"
+	1    8150 2650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
