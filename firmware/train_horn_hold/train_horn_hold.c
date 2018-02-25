@@ -84,7 +84,9 @@ int main(void)
     TB0CCTL0 = OUTMOD_4 + CCIE;                 // TBCCR0 toggle, interrupt enabled
     TB0CCTL1 = OUTMOD_4 + CCIE;                 // TBCCR1 toggle, interrupt enabled
     TB0CCTL2 = OUTMOD_4 + CCIE;                 // TBCCR2 toggle, interrupt enabled
-    TB0CTL = TBSSEL_1 | TBCLR | TBIE;           // ACLK, continuous mode, clear TBR, enable interrupts
+    TB0CTL = TBSSEL_1 | TBCLR | TBIE;           // ACLK, clear TBR, enable interrupts
+    TB0R = 0xFFFF;                              // Set initial count of Timer_B
+                                                // removes pause before initial sound generation
 
     for(;;) {
         __bis_SR_register(LPM3_bits | GIE);     // Enter LPM3, enable interrupts
