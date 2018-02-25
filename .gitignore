@@ -30,6 +30,7 @@ _autosave-*
 *.launches*
 *.settings*
 *Debug*
+*Release*
 *targetConfigs*
 *lnk_msp430fr2000.cmd
 
