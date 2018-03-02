@@ -100,6 +100,9 @@ int main(void)
         TB0CTL   &= ~MC_2;                      // disable Timer_B
         P1OUT    &= ~(BIT5 | BIT6 | BIT7);      // set pins low since they could have been high during interrupt
 
+        // delay to prvent fast button presses from locking up system
+        __delay_cycles(20000);
+
         // enable play button again
         P1IFG &= ~PLAY_BTN;                     // acknowledge all interrupts
         P1IE  |= PLAY_BTN;                      // enable interrupt on play button
