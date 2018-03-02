@@ -267,7 +267,7 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_d
 F 4 "Samsung Electro-Mechanics" H 1350 1100 60  0001 C CNN "Manufacture"
 F 5 "CL21A475KQFNNNG" H 1350 1100 60  0001 C CNN "Mfg Part Number"
 F 6 "0805" H 1350 1100 60  0001 C CNN "Package"
-F 7 "4.7µF ±10% 6.3V Ceramic Capacitor X5R 0805 " H 1350 1100 60  0001 C CNN "Description"
+F 7 "CAP CER 4.7UF 6.3V X5R 0805" H 1350 1100 60  0001 C CNN "Description"
 	1    1350 1100
 	1    0    0    -1  
 $EndComp
@@ -397,7 +397,7 @@ F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10118192.pdf" H 90
 F 4 "Amphenol" H 750 1100 60  0001 C CNN "Manufacture"
 F 5 "10118192-0001LF" H 750 1100 60  0001 C CNN "Mfg Part Number"
 F 6 "USB MICRO B" H 750 1100 60  0001 C CNN "Package"
-F 7 "USB - micro B USB 2.0 Receptacle Connector 5 Position Surface Mount, Right Angle" H 750 1100 60  0001 C CNN "Description"
+F 7 "CONN USB MICRO B RECPT SMT R/A" H 750 1100 60  0001 C CNN "Description"
 	1    750  1100
 	1    0    0    -1  
 $EndComp
@@ -1645,7 +1645,7 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_d
 F 4 "Samsung Electro-Mechanics" H 3300 1100 60  0001 C CNN "Manufacture"
 F 5 "CL21A475KQFNNNG" H 3300 1100 60  0001 C CNN "Mfg Part Number"
 F 6 "0805" H 3300 1100 60  0001 C CNN "Package"
-F 7 "4.7µF ±10% 6.3V Ceramic Capacitor X5R 0805 " H 3300 1100 60  0001 C CNN "Description"
+F 7 "CAP CER 4.7UF 6.3V X5R 0805" H 3300 1100 60  0001 C CNN "Description"
 	1    3300 1100
 	1    0    0    -1  
 $EndComp
