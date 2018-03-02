@@ -123,11 +123,11 @@ P 5550 2400
 F 0 "R10" V 5630 2400 50  0000 C CNN
 F 1 "3.6k" V 5550 2400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 5480 2400 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 5550 2400 50  0001 C CNN
-F 4 "Panasonic Electronic Components" H 5550 2400 60  0001 C CNN "Manufacture"
-F 5 "ERA-6AEB362V" H 5550 2400 60  0001 C CNN "Mfg Part Number"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 5550 2400 50  0001 C CNN
+F 4 "Yageo" H 5550 2400 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-073K6L" H 5550 2400 60  0001 C CNN "Mfg Part Number"
 F 6 "0805" H 5550 2400 60  0001 C CNN "Package"
-F 7 "RES SMD 3.6K OHM 0.1% 1/8W 0805" H 5550 2400 60  0001 C CNN "Description"
+F 7 "RES SMD 3.6K OHM 1% 1/8W 0805" H 5550 2400 60  0001 C CNN "Description"
 	1    5550 2400
 	0    1    1    0   
 $EndComp
@@ -1930,11 +1930,11 @@ P 6150 2400
 F 0 "R13" V 6230 2400 50  0000 C CNN
 F 1 "3.6k" V 6150 2400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6080 2400 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 6150 2400 50  0001 C CNN
-F 4 "Panasonic Electronic Components" H 6150 2400 60  0001 C CNN "Manufacture"
-F 5 "ERA-6AEB362V" H 6150 2400 60  0001 C CNN "Mfg Part Number"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 6150 2400 50  0001 C CNN
+F 4 "Yageo" H 6150 2400 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-073K6L" H 6150 2400 60  0001 C CNN "Mfg Part Number"
 F 6 "0805" H 6150 2400 60  0001 C CNN "Package"
-F 7 "RES SMD 3.6K OHM 0.1% 1/8W 0805" H 6150 2400 60  0001 C CNN "Description"
+F 7 "RES SMD 3.6K OHM 1% 1/8W 0805" H 6150 2400 60  0001 C CNN "Description"
 	1    6150 2400
 	0    1    1    0   
 $EndComp
@@ -1945,11 +1945,11 @@ P 6750 2400
 F 0 "R17" V 6830 2400 50  0000 C CNN
 F 1 "3.6k" V 6750 2400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6680 2400 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C307.pdf" H 6750 2400 50  0001 C CNN
-F 4 "Panasonic Electronic Components" H 6750 2400 60  0001 C CNN "Manufacture"
-F 5 "ERA-6AEB362V" H 6750 2400 60  0001 C CNN "Mfg Part Number"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 6750 2400 50  0001 C CNN
+F 4 "Yageo" H 6750 2400 60  0001 C CNN "Manufacture"
+F 5 "RC0805FR-073K6L" H 6750 2400 60  0001 C CNN "Mfg Part Number"
 F 6 "0805" H 6750 2400 60  0001 C CNN "Package"
-F 7 "RES SMD 3.6K OHM 0.1% 1/8W 0805" H 6750 2400 60  0001 C CNN "Description"
+F 7 "RES SMD 3.6K OHM 1% 1/8W 0805" H 6750 2400 60  0001 C CNN "Description"
 	1    6750 2400
 	0    1    1    0   
 $EndComp
