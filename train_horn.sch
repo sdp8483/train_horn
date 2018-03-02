@@ -1046,11 +1046,11 @@ P 7950 800
 F 0 "JP5" H 7950 880 50  0000 C CNN
 F 1 "GADJ" H 7960 740 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" H 7950 800 50  0001 C CNN
-F 3 "" H 7950 800 50  0001 C CNN
-F 4 "NONE" H 7950 800 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7950 800 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7950 800 60  0001 C CNN "Package"
-F 7 "NONE" H 7950 800 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 7950 800 50  0001 C CNN
+F 4 "Yageo" H 7950 800 60  0001 C CNN "Manufacture"
+F 5 "RC1206JR-070RL" H 7950 800 60  0001 C CNN "Mfg Part Number"
+F 6 "1206" H 7950 800 60  0001 C CNN "Package"
+F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 800 60  0001 C CNN "Description"
 	1    7950 800 
 	0    1    1    0   
 $EndComp
@@ -1076,11 +1076,11 @@ P 7950 1100
 F 0 "JP4" H 7950 1180 50  0000 C CNN
 F 1 "GADJ" H 7960 1040 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" H 7950 1100 50  0001 C CNN
-F 3 "" H 7950 1100 50  0001 C CNN
-F 4 "NONE" H 7950 1100 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7950 1100 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7950 1100 60  0001 C CNN "Package"
-F 7 "NONE" H 7950 1100 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 7950 1100 50  0001 C CNN
+F 4 "Yageo" H 7950 1100 60  0001 C CNN "Manufacture"
+F 5 "RC1206JR-070RL" H 7950 1100 60  0001 C CNN "Mfg Part Number"
+F 6 "1206" H 7950 1100 60  0001 C CNN "Package"
+F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 1100 60  0001 C CNN "Description"
 	1    7950 1100
 	0    1    1    0   
 $EndComp
@@ -1091,11 +1091,11 @@ P 7950 1400
 F 0 "JP3" H 7950 1480 50  0000 C CNN
 F 1 "GADJ" H 7960 1340 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" H 7950 1400 50  0001 C CNN
-F 3 "" H 7950 1400 50  0001 C CNN
-F 4 "NONE" H 7950 1400 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7950 1400 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7950 1400 60  0001 C CNN "Package"
-F 7 "NONE" H 7950 1400 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 7950 1400 50  0001 C CNN
+F 4 "Yageo" H 7950 1400 60  0001 C CNN "Manufacture"
+F 5 "RC1206JR-070RL" H 7950 1400 60  0001 C CNN "Mfg Part Number"
+F 6 "1206" H 7950 1400 60  0001 C CNN "Package"
+F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 1400 60  0001 C CNN "Description"
 	1    7950 1400
 	0    1    1    0   
 $EndComp
@@ -1106,11 +1106,11 @@ P 7950 1900
 F 0 "JP8" H 7950 1980 50  0000 C CNN
 F 1 "GADJ" H 7960 1840 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" H 7950 1900 50  0001 C CNN
-F 3 "" H 7950 1900 50  0001 C CNN
-F 4 "NONE" H 7950 1900 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7950 1900 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7950 1900 60  0001 C CNN "Package"
-F 7 "NONE" H 7950 1900 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 7950 1900 50  0001 C CNN
+F 4 "Yageo" H 7950 1900 60  0001 C CNN "Manufacture"
+F 5 "RC1206JR-070RL" H 7950 1900 60  0001 C CNN "Mfg Part Number"
+F 6 "1206" H 7950 1900 60  0001 C CNN "Package"
+F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 1900 60  0001 C CNN "Description"
 	1    7950 1900
 	0    1    1    0   
 $EndComp
@@ -1121,11 +1121,11 @@ P 7950 2200
 F 0 "JP7" H 7950 2280 50  0000 C CNN
 F 1 "GADJ" H 7960 2140 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" H 7950 2200 50  0001 C CNN
-F 3 "" H 7950 2200 50  0001 C CNN
-F 4 "NONE" H 7950 2200 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7950 2200 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7950 2200 60  0001 C CNN "Package"
-F 7 "NONE" H 7950 2200 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 7950 2200 50  0001 C CNN
+F 4 "Yageo" H 7950 2200 60  0001 C CNN "Manufacture"
+F 5 "RC1206JR-070RL" H 7950 2200 60  0001 C CNN "Mfg Part Number"
+F 6 "1206" H 7950 2200 60  0001 C CNN "Package"
+F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 2200 60  0001 C CNN "Description"
 	1    7950 2200
 	0    1    1    0   
 $EndComp
@@ -1136,11 +1136,11 @@ P 7950 2500
 F 0 "JP6" H 7950 2580 50  0000 C CNN
 F 1 "GADJ" H 7960 2440 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" H 7950 2500 50  0001 C CNN
-F 3 "" H 7950 2500 50  0001 C CNN
-F 4 "NONE" H 7950 2500 60  0001 C CNN "Manufacture"
-F 5 "NONE" H 7950 2500 60  0001 C CNN "Mfg Part Number"
-F 6 "NONE" H 7950 2500 60  0001 C CNN "Package"
-F 7 "NONE" H 7950 2500 60  0001 C CNN "Description"
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 7950 2500 50  0001 C CNN
+F 4 "Yageo" H 7950 2500 60  0001 C CNN "Manufacture"
+F 5 "RC1206JR-070RL" H 7950 2500 60  0001 C CNN "Mfg Part Number"
+F 6 "1206" H 7950 2500 60  0001 C CNN "Package"
+F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 2500 60  0001 C CNN "Description"
 	1    7950 2500
 	0    1    1    0   
 $EndComp
