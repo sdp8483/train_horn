@@ -316,7 +316,7 @@ F 3 "http://katalog.we-online.de/led/datasheet/150080BS75000.pdf" V 1800 1100 50
 F 4 "Wurth Electronics Inc." H 1800 1100 60  0001 C CNN "Manufacture"
 F 5 "150080BS75000" H 1800 1100 60  0001 C CNN "Mfg Part Number"
 F 6 "0805" H 1800 1100 60  0001 C CNN "Package"
-F 7 "Blue 470nm LED Indication" H 1800 1100 60  0001 C CNN "Description"
+F 7 "LED BLUE CLEAR 0805 SMD" H 1800 1100 60  0001 C CNN "Description"
 	1    1800 1100
 	0    -1   -1   0   
 $EndComp
