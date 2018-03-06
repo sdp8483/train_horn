@@ -252,7 +252,11 @@ P 2400 1300
 F 0 "U2" H 2650 800 60  0000 C CNN
 F 1 "MCP73831" H 2400 1800 60  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 2400 1300 60  0001 C CNN
-F 3 "" H 2400 1300 60  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2400 1300 60  0001 C CNN
+F 4 "Microchip Technology" H 2400 1300 60  0001 C CNN "Manufacture"
+F 5 "MCP73831T-2ACI/OT" H 2400 1300 60  0001 C CNN "Mfg Part Number"
+F 6 "SOT23-5" H 2400 1300 60  0001 C CNN "Package"
+F 7 "IC CONTROLLR LI-ION 4.2V SOT23-5" H 2400 1300 60  0001 C CNN "Description"
 	1    2400 1300
 	1    0    0    -1  
 $EndComp
