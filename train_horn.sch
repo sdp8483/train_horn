@@ -915,7 +915,7 @@ F 0 "R5" V 2330 2650 50  0000 C CNN
 F 1 "1K" V 2250 2650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2180 2650 50  0001 C CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 2250 2650 50  0001 C CNN
-F 4 "https://www.digikey.com/en/supplier-centers/y/yageo" H 2250 2650 60  0001 C CNN "Manufacture"
+F 4 "Yageo" H 2250 2650 60  0001 C CNN "Manufacture"
 F 5 "RC0805FR-071KL" H 2250 2650 60  0001 C CNN "Mfg Part Number"
 F 6 "0805" H 2250 2650 60  0001 C CNN "Package"
 F 7 "RES SMD 1K OHM 1% 1/8W 0805" H 2250 2650 60  0001 C CNN "Description"
@@ -1721,7 +1721,7 @@ F 0 "R14" V 6730 5450 50  0000 C CNN
 F 1 "1K" V 6650 5450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6580 5450 50  0001 C CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" H 6650 5450 50  0001 C CNN
-F 4 "https://www.digikey.com/en/supplier-centers/y/yageo" H 6650 5450 60  0001 C CNN "Manufacture"
+F 4 "Yageo" H 6650 5450 60  0001 C CNN "Manufacture"
 F 5 "RC0805FR-071KL" H 6650 5450 60  0001 C CNN "Mfg Part Number"
 F 6 "0805" H 6650 5450 60  0001 C CNN "Package"
 F 7 "RES SMD 1K OHM 1% 1/8W 0805" H 6650 5450 60  0001 C CNN "Description"
