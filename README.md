@@ -1,5 +1,5 @@
 # Train Horn Synthesis with the MSP430FR2000
-Link to blog post
+This readme is a short version of the blog post avalible on my personal website. Please read the blog post if you need more information: [link to blog]
 
 ## Introduction
 The hardware and code presented is designed to simulate the sound of a train horn (or come as close as possible with the given hardware). Specifically is is designed to synthesize the sound of a [Leslie S-3L Locomotive Air Horn](http://www.dieselairhorns.com/sounds/LeslieS3L.mp3).
