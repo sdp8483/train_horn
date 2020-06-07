@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name msp430)(type Legacy)(uri ${KIPRJMOD}/lib_sch/msp430.lib)(options "")(descr ""))
+  (lib (name mcp73831)(type Legacy)(uri ${KIPRJMOD}/lib_sch/mcp73831.lib)(options "")(descr ""))
+  (lib (name tps782)(type Legacy)(uri ${KIPRJMOD}/lib_sch/tps782.lib)(options "")(descr ""))
+  (lib (name tpa6211a1)(type Legacy)(uri ${KIPRJMOD}/lib_sch/tpa6211a1.lib)(options "")(descr ""))
+  (lib (name train_horn)(type Legacy)(uri ${KIPRJMOD}/lib_sch/train_horn.lib)(options "")(descr ""))
+)

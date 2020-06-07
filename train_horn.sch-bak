@@ -1,5 +1,43 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:msp430
+LIBS:mcp73831
+LIBS:tps782
+LIBS:tpa6211a1
+LIBS:train_horn
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:train_horn-cache
+EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -14,7 +52,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L msp430:MSP430FR2000_TSSOP U4
+L MSP430FR2000_TSSOP U4
 U 1 1 5A773189
 P 5600 3750
 F 0 "U4" H 6100 2450 60  0000 C CNN
@@ -29,7 +67,7 @@ F 7 "16 MHZ ULTRA-LOW-POWER MICROCONT" H 5600 3750 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:Speaker LS1
+L Speaker LS1
 U 1 1 5A7731DB
 P 10300 1750
 F 0 "LS1" H 10350 1975 50  0000 R CNN
@@ -42,7 +80,7 @@ F 5 "2POS 5MM SCREW TERMINAL BLOCK" H 10300 1750 60  0001 C CNN "Description"
 	1    0    0    1   
 $EndComp
 $Comp
-L train_horn:GND #PWR01
+L GND #PWR01
 U 1 1 5A773B95
 P 4450 4200
 F 0 "#PWR01" H 4450 3950 50  0001 C CNN
@@ -53,7 +91,7 @@ F 3 "" H 4450 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:+3V3 #PWR02
+L +3V3 #PWR02
 U 1 1 5A773BB5
 P 4250 3700
 F 0 "#PWR02" H 4250 3550 50  0001 C CNN
@@ -64,7 +102,7 @@ F 3 "" H 4250 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R9
+L R R9
 U 1 1 5A77863D
 P 5550 1550
 F 0 "R9" V 5630 1550 50  0000 C CNN
@@ -79,7 +117,7 @@ F 7 "RES SMD 5.1K OHM 1% 1/8W 0805" H 5550 1550 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R10
+L R R10
 U 1 1 5A7790E3
 P 5550 2400
 F 0 "R10" V 5630 2400 50  0000 C CNN
@@ -94,7 +132,7 @@ F 7 "RES SMD 3.6K OHM 1% 1/8W 0805" H 5550 2400 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:GND #PWR03
+L GND #PWR03
 U 1 1 5A7795E4
 P 5850 2750
 F 0 "#PWR03" H 5850 2500 50  0001 C CNN
@@ -105,7 +143,7 @@ F 3 "" H 5850 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR04
+L GND #PWR04
 U 1 1 5A779638
 P 6450 2750
 F 0 "#PWR04" H 6450 2500 50  0001 C CNN
@@ -116,7 +154,7 @@ F 3 "" H 6450 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR05
+L GND #PWR05
 U 1 1 5A779685
 P 7050 2750
 F 0 "#PWR05" H 7050 2500 50  0001 C CNN
@@ -127,7 +165,7 @@ F 3 "" H 7050 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR06
+L GND #PWR06
 U 1 1 5A7796D2
 P 7050 1900
 F 0 "#PWR06" H 7050 1650 50  0001 C CNN
@@ -138,7 +176,7 @@ F 3 "" H 7050 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR07
+L GND #PWR07
 U 1 1 5A77971F
 P 6450 1900
 F 0 "#PWR07" H 6450 1650 50  0001 C CNN
@@ -149,7 +187,7 @@ F 3 "" H 6450 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR08
+L GND #PWR08
 U 1 1 5A77976C
 P 5850 1900
 F 0 "#PWR08" H 5850 1650 50  0001 C CNN
@@ -160,7 +198,7 @@ F 3 "" H 5850 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR09
+L GND #PWR09
 U 1 1 5A77992F
 P 7050 1050
 F 0 "#PWR09" H 7050 800 50  0001 C CNN
@@ -171,7 +209,7 @@ F 3 "" H 7050 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR010
+L GND #PWR010
 U 1 1 5A7798E2
 P 6450 1050
 F 0 "#PWR010" H 6450 800 50  0001 C CNN
@@ -182,7 +220,7 @@ F 3 "" H 6450 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR011
+L GND #PWR011
 U 1 1 5A779895
 P 5850 1050
 F 0 "#PWR011" H 5850 800 50  0001 C CNN
@@ -193,7 +231,7 @@ F 3 "" H 5850 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R8
+L R R8
 U 1 1 5A775F2C
 P 5550 700
 F 0 "R8" V 5630 700 50  0000 C CNN
@@ -208,7 +246,7 @@ F 7 "RES SMD 6.2K OHM 1% 1/8W 0805" H 5550 700 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L mcp73831:MCP73831 U2
+L MCP73831 U2
 U 1 1 5A77D942
 P 2400 1300
 F 0 "U2" H 2650 800 60  0000 C CNN
@@ -223,7 +261,7 @@ F 7 "IC CONTROLLR LI-ION 4.2V SOT23-5" H 2400 1300 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C1
+L C_Small C1
 U 1 1 5A77DD92
 P 1350 1100
 F 0 "C1" H 1360 1170 50  0000 L CNN
@@ -238,7 +276,7 @@ F 7 "CAP CER 4.7UF 6.3V X5R 0805" H 1350 1100 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R6
+L R R6
 U 1 1 5A77DE81
 P 3000 1500
 F 0 "R6" V 3080 1500 50  0000 C CNN
@@ -253,7 +291,7 @@ F 7 "RES SMD 2K OHM 1% 1/8W 0805" H 3000 1500 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R3
+L R R3
 U 1 1 5A77DEF6
 P 1800 1450
 F 0 "R3" V 1880 1450 50  0000 C CNN
@@ -268,7 +306,7 @@ F 7 "RES SMD 470 OHM 1% 1/8W 0805" H 1800 1450 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:LED_Small D1
+L LED_Small D1
 U 1 1 5A77DF5A
 P 1800 1100
 F 0 "D1" H 1750 1225 50  0000 L CNN
@@ -283,7 +321,7 @@ F 7 "LED BLUE CLEAR 0805 SMD" H 1800 1100 60  0001 C CNN "Description"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L train_horn:Battery_Cell BT1
+L Battery_Cell BT1
 U 1 1 5A77EBC1
 P 3800 1150
 F 0 "BT1" H 3900 1250 50  0000 L CNN
@@ -298,7 +336,7 @@ F 7 "HOLDER BATT 18650 1CELL PC PIN" H 3800 1150 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR012
+L GND #PWR012
 U 1 1 5A77F065
 P 3000 1800
 F 0 "#PWR012" H 3000 1550 50  0001 C CNN
@@ -309,7 +347,7 @@ F 3 "" H 3000 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR013
+L GND #PWR013
 U 1 1 5A77F434
 P 1350 1300
 F 0 "#PWR013" H 1350 1050 50  0001 C CNN
@@ -320,7 +358,7 @@ F 3 "" H 1350 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR014
+L GND #PWR014
 U 1 1 5A77F496
 P 3300 1350
 F 0 "#PWR014" H 3300 1100 50  0001 C CNN
@@ -331,7 +369,7 @@ F 3 "" H 3300 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR015
+L GND #PWR015
 U 1 1 5A77F4F8
 P 3800 1350
 F 0 "#PWR015" H 3800 1100 50  0001 C CNN
@@ -342,7 +380,7 @@ F 3 "" H 3800 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:VCC #PWR016
+L VCC #PWR016
 U 1 1 5A780F14
 P 3800 800
 F 0 "#PWR016" H 3800 650 50  0001 C CNN
@@ -353,7 +391,7 @@ F 3 "" H 3800 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:USB_OTG J1
+L USB_OTG J1
 U 1 1 5A78125C
 P 750 1100
 F 0 "J1" H 550 1550 50  0000 L CNN
@@ -368,7 +406,7 @@ F 7 "CONN USB MICRO B RECPT SMT R/A" H 750 1100 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR017
+L GND #PWR017
 U 1 1 5A78196D
 P 750 1550
 F 0 "#PWR017" H 750 1300 50  0001 C CNN
@@ -385,7 +423,7 @@ NoConn ~ 650  1500
 Text Notes 500  600  0    60   ~ 0
 LiPo BATTERY AND CHARGING CIRCUIT
 $Comp
-L tps782:TPS782 U3
+L TPS782 U3
 U 1 1 5A783757
 P 4150 2400
 F 0 "U3" H 4400 2050 60  0000 C CNN
@@ -400,7 +438,7 @@ F 7 "IC REG LINEAR 3.3V 150MA SOT23-5" H 4150 2400 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C3
+L C_Small C3
 U 1 1 5A783B88
 P 3250 2550
 F 0 "C3" H 3260 2620 50  0000 L CNN
@@ -415,7 +453,7 @@ F 7 "CAP CER 1UF 16V X7R 0805" H 3250 2550 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR018
+L GND #PWR018
 U 1 1 5A783CA9
 P 4150 3000
 F 0 "#PWR018" H 4150 2750 50  0001 C CNN
@@ -426,7 +464,7 @@ F 3 "" H 4150 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:VCC #PWR019
+L VCC #PWR019
 U 1 1 5A784065
 P 3250 2350
 F 0 "#PWR019" H 3250 2200 50  0001 C CNN
@@ -437,7 +475,7 @@ F 3 "" H 3250 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR020
+L GND #PWR020
 U 1 1 5A784511
 P 4750 2700
 F 0 "#PWR020" H 4750 2450 50  0001 C CNN
@@ -448,7 +486,7 @@ F 3 "" H 4750 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR021
+L GND #PWR021
 U 1 1 5A78457F
 P 3250 2700
 F 0 "#PWR021" H 3250 2450 50  0001 C CNN
@@ -459,7 +497,7 @@ F 3 "" H 3250 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:+3V3 #PWR022
+L +3V3 #PWR022
 U 1 1 5A784E28
 P 4750 2350
 F 0 "#PWR022" H 4750 2200 50  0001 C CNN
@@ -472,7 +510,7 @@ $EndComp
 Text Notes 2750 2150 0    60   ~ 0
 3V3 LDO FOR MSP430
 $Comp
-L train_horn:SW_Push SW1
+L SW_Push SW1
 U 1 1 5A78AC21
 P 7000 5900
 F 0 "SW1" H 7050 6000 50  0000 L CNN
@@ -487,7 +525,7 @@ F 7 "SWITCH TACTILE SPST-NO 0.05A 12V" H 7000 5900 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR023
+L GND #PWR023
 U 1 1 5A78ACBC
 P 7300 5950
 F 0 "#PWR023" H 7300 5700 50  0001 C CNN
@@ -498,7 +536,7 @@ F 3 "" H 7300 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:LED D3
+L LED D3
 U 1 1 5A78B290
 P 7000 5450
 F 0 "D3" H 7000 5550 50  0000 C CNN
@@ -513,7 +551,7 @@ F 7 "LED GREEN CLEAR 0805 SMD" H 7000 5450 60  0001 C CNN "Description"
 	-1   0    0    1   
 $EndComp
 $Comp
-L train_horn:GND #PWR024
+L GND #PWR024
 U 1 1 5A78B4D3
 P 7300 5500
 F 0 "#PWR024" H 7300 5250 50  0001 C CNN
@@ -524,7 +562,7 @@ F 3 "" H 7300 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:Conn_01x04 J2
+L Conn_01x04 J2
 U 1 1 5A7917E8
 P 4900 5750
 F 0 "J2" H 4900 5950 50  0000 C CNN
@@ -537,7 +575,7 @@ F 5 "CONN HEADER 4 POS 2.54" H 4900 5750 60  0001 C CNN "Description"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR025
+L GND #PWR025
 U 1 1 5A792222
 P 5150 6000
 F 0 "#PWR025" H 5150 5750 50  0001 C CNN
@@ -548,7 +586,7 @@ F 3 "" H 5150 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:Jumper_NO_Small JP2
+L Jumper_NO_Small JP2
 U 1 1 5A7937F4
 P 5650 5500
 F 0 "JP2" H 5650 5580 50  0000 C CNN
@@ -561,7 +599,7 @@ F 5 "CONN HEADER 2 POS 2.54" H 5650 5500 60  0001 C CNN "Description"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L train_horn:+3V3 #PWR026
+L +3V3 #PWR026
 U 1 1 5A793E9B
 P 5800 5450
 F 0 "#PWR026" H 5800 5300 50  0001 C CNN
@@ -574,7 +612,7 @@ $EndComp
 Text Notes 4700 5250 0    60   ~ 0
 EXT PROGRAMMING HEADER
 $Comp
-L train_horn:R R7
+L R R7
 U 1 1 5A795193
 P 4250 4000
 F 0 "R7" V 4330 4000 50  0000 C CNN
@@ -591,7 +629,7 @@ $EndComp
 Text Notes 3200 4100 0    50   ~ 0
 Internal pullup is enabled \nin software, install pullup \nif internal is not enabled.
 $Comp
-L tpa6211a1:TPA6211A1 U5
+L TPA6211A1 U5
 U 1 1 5A7BA43C
 P 9300 1150
 F 0 "U5" H 9550 50  60  0000 C CNN
@@ -606,7 +644,7 @@ F 7 "IC AMP AUDIO PWR 3.1W MONO 8MSOP" H 9300 1150 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:VCC #PWR027
+L VCC #PWR027
 U 1 1 5A7BAE0D
 P 9900 1050
 F 0 "#PWR027" H 9900 900 50  0001 C CNN
@@ -617,7 +655,7 @@ F 3 "" H 9900 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR028
+L GND #PWR028
 U 1 1 5A7BB2D3
 P 8750 2450
 F 0 "#PWR028" H 8750 2200 50  0001 C CNN
@@ -628,7 +666,7 @@ F 3 "" H 8750 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR029
+L GND #PWR029
 U 1 1 5A7BBABF
 P 9900 1450
 F 0 "#PWR029" H 9900 1200 50  0001 C CNN
@@ -639,7 +677,7 @@ F 3 "" H 9900 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR030
+L GND #PWR030
 U 1 1 5A7BC553
 P 9850 2200
 F 0 "#PWR030" H 9850 1950 50  0001 C CNN
@@ -650,7 +688,7 @@ F 3 "" H 9850 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C17
+L C_Small C17
 U 1 1 5A7C56A3
 P 7550 1550
 F 0 "C17" V 7650 1500 50  0000 L CNN
@@ -665,7 +703,7 @@ F 7 "CAP CER 0.22UF 25V X7R 0805" H 7550 1550 60  0001 C CNN "Description"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L train_horn:C_Small C18
+L C_Small C18
 U 1 1 5A7C5F4A
 P 7550 1900
 F 0 "C18" H 7560 1970 50  0000 L CNN
@@ -680,7 +718,7 @@ F 7 "CAP CER 0.22UF 25V X7R 0805" H 7550 1900 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR031
+L GND #PWR031
 U 1 1 5A7C6709
 P 7550 2050
 F 0 "#PWR031" H 7550 1800 50  0001 C CNN
@@ -691,7 +729,7 @@ F 3 "" H 7550 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R1
+L R R1
 U 1 1 5A7E2083
 P 600 3300
 F 0 "R1" V 680 3300 50  0000 C CNN
@@ -706,7 +744,7 @@ F 7 "RES SMD 100K OHM 1% 1/8W 0805" H 600 3300 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R2
+L R R2
 U 1 1 5A7E21EC
 P 600 3700
 F 0 "R2" V 680 3700 50  0000 C CNN
@@ -721,7 +759,7 @@ F 7 "RES SMD 56K OHM 1% 1/8W 0805" H 600 3700 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR032
+L GND #PWR032
 U 1 1 5A7E228C
 P 600 3900
 F 0 "#PWR032" H 600 3650 50  0001 C CNN
@@ -732,7 +770,7 @@ F 3 "" H 600 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:VCC #PWR033
+L VCC #PWR033
 U 1 1 5A7E2300
 P 600 3100
 F 0 "#PWR033" H 600 2950 50  0001 C CNN
@@ -781,7 +819,7 @@ SBWTDIO
 Text GLabel 5350 5850 2    50   Input ~ 0
 SBWTCK
 $Comp
-L train_horn:MCP6566R U1
+L MCP6566R U1
 U 1 1 5A7FFEE6
 P 1400 3400
 F 0 "U1" H 1400 3600 50  0000 L CNN
@@ -796,7 +834,7 @@ F 7 "IC COMPARATOR R-R SOT-23-5" H 1400 3400 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:LED D2
+L LED D2
 U 1 1 5A801405
 P 2250 3000
 F 0 "D2" H 2250 3100 50  0000 C CNN
@@ -811,7 +849,7 @@ F 7 "LED RED CLEAR 0805 SMD" H 2250 3000 60  0001 C CNN "Description"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L train_horn:GND #PWR034
+L GND #PWR034
 U 1 1 5A801FB9
 P 2250 3750
 F 0 "#PWR034" H 2250 3500 50  0001 C CNN
@@ -822,7 +860,7 @@ F 3 "" H 2250 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:VCC #PWR035
+L VCC #PWR035
 U 1 1 5A8025FD
 P 1800 2950
 F 0 "#PWR035" H 1800 2800 50  0001 C CNN
@@ -833,7 +871,7 @@ F 3 "" H 1800 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:VCC #PWR036
+L VCC #PWR036
 U 1 1 5A802780
 P 1300 2450
 F 0 "#PWR036" H 1300 2300 50  0001 C CNN
@@ -844,7 +882,7 @@ F 3 "" H 1300 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR037
+L GND #PWR037
 U 1 1 5A802D2C
 P 1300 3750
 F 0 "#PWR037" H 1300 3500 50  0001 C CNN
@@ -859,7 +897,7 @@ VREF+
 Text Notes 750  3250 0    50   ~ 0
 1.2V±3.5%
 $Comp
-L train_horn:2N7002 Q1
+L 2N7002 Q1
 U 1 1 5A80E1FC
 P 2150 3400
 F 0 "Q1" H 2350 3475 50  0000 L CNN
@@ -874,7 +912,7 @@ F 7 "MOSFET N-CH 60V 300MA SOT-23" H 2150 3400 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R5
+L R R5
 U 1 1 5A80EC3C
 P 2250 2650
 F 0 "R5" V 2330 2650 50  0000 C CNN
@@ -889,7 +927,7 @@ F 7 "RES SMD 1K OHM 1% 1/8W 0805" H 2250 2650 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:VCC #PWR038
+L VCC #PWR038
 U 1 1 5A80EE7D
 P 2250 2450
 F 0 "#PWR038" H 2250 2300 50  0001 C CNN
@@ -902,7 +940,7 @@ $EndComp
 Text Notes 500  2150 0    60   ~ 0
 BATTERY VOLTAGE INDICATOR
 $Comp
-L train_horn:C_Small C2
+L C_Small C2
 U 1 1 5A817F64
 P 1450 2800
 F 0 "C2" H 1460 2870 50  0000 L CNN
@@ -917,7 +955,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 1450 2800 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:GND #PWR039
+L GND #PWR039
 U 1 1 5A818CE1
 P 1450 2950
 F 0 "#PWR039" H 1450 2700 50  0001 C CNN
@@ -930,7 +968,7 @@ $EndComp
 Text Notes 500  2250 0    50   ~ 0
 See Spreadsheet for Low Battery Range
 $Comp
-L train_horn:Test_Point TP1
+L Test_Point TP1
 U 1 1 5A824476
 P 7050 3850
 F 0 "TP1" V 7000 3900 50  0000 C CNN
@@ -941,7 +979,7 @@ F 3 "" H 7250 3850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:Test_Point TP2
+L Test_Point TP2
 U 1 1 5A8251A3
 P 7050 4150
 F 0 "TP2" V 7000 4200 50  0000 C CNN
@@ -952,7 +990,7 @@ F 3 "" H 7250 4150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:Test_Point TP3
+L Test_Point TP3
 U 1 1 5A825733
 P 7050 4350
 F 0 "TP3" V 7000 4400 50  0000 C CNN
@@ -963,7 +1001,7 @@ F 3 "" H 7250 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:Test_Point TP4
+L Test_Point TP4
 U 1 1 5A8257F2
 P 7050 4850
 F 0 "TP4" V 7000 4900 50  0000 C CNN
@@ -974,7 +1012,7 @@ F 3 "" H 7250 4850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:Test_Point TP5
+L Test_Point TP5
 U 1 1 5A825CD6
 P 7050 4950
 F 0 "TP5" V 7000 5000 50  0000 C CNN
@@ -987,7 +1025,7 @@ $EndComp
 Text Notes 3150 3450 0    60   ~ 0
 MSP430FR MICROCONTROLLER
 $Comp
-L train_horn:Jumper_NC_Small JP1
+L Jumper_NC_Small JP1
 U 1 1 5A82A8F7
 P 3050 2400
 F 0 "JP1" H 3050 2480 50  0000 C CNN
@@ -1006,7 +1044,7 @@ EN
 Text GLabel 2900 2400 0    50   Input ~ 0
 EN
 $Comp
-L train_horn:Jumper_NO_Small JP5
+L Jumper_NO_Small JP5
 U 1 1 5A832886
 P 7950 800
 F 0 "JP5" H 7950 880 50  0000 C CNN
@@ -1021,7 +1059,7 @@ F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 800 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R18
+L R R18
 U 1 1 5A832D56
 P 8150 650
 F 0 "R18" V 8230 650 50  0000 C CNN
@@ -1036,7 +1074,7 @@ F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 650 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:Jumper_NO_Small JP4
+L Jumper_NO_Small JP4
 U 1 1 5A833627
 P 7950 1100
 F 0 "JP4" H 7950 1180 50  0000 C CNN
@@ -1051,7 +1089,7 @@ F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 1100 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:Jumper_NO_Small JP3
+L Jumper_NO_Small JP3
 U 1 1 5A83370F
 P 7950 1400
 F 0 "JP3" H 7950 1480 50  0000 C CNN
@@ -1066,7 +1104,7 @@ F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 1400 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:Jumper_NO_Small JP8
+L Jumper_NO_Small JP8
 U 1 1 5A83A0B3
 P 7950 1900
 F 0 "JP8" H 7950 1980 50  0000 C CNN
@@ -1081,7 +1119,7 @@ F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 1900 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:Jumper_NO_Small JP7
+L Jumper_NO_Small JP7
 U 1 1 5A83A0C7
 P 7950 2200
 F 0 "JP7" H 7950 2280 50  0000 C CNN
@@ -1096,7 +1134,7 @@ F 7 "RES SMD 0 OHM JUMPER 1/4W 1206" H 7950 2200 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:Jumper_NO_Small JP6
+L Jumper_NO_Small JP6
 U 1 1 5A83A0DB
 P 7950 2500
 F 0 "JP6" H 7950 2580 50  0000 C CNN
@@ -1153,7 +1191,7 @@ X
 Text Notes 9300 3150 0    50   ~ 0
 X
 Wire Wire Line
-	4250 3750 4450 3750
+	4250 3750 4850 3750
 Wire Wire Line
 	4450 3750 4450 3850
 Wire Wire Line
@@ -1162,18 +1200,18 @@ Connection ~ 4700 3750
 Wire Wire Line
 	4700 4150 4700 4050
 Wire Wire Line
-	4450 4150 4700 4150
+	4450 4150 4850 4150
 Wire Wire Line
-	4450 4050 4450 4150
+	4450 4050 4450 4200
 Connection ~ 4700 4150
 Connection ~ 4450 3750
 Connection ~ 4450 4150
 Wire Wire Line
-	5700 1550 5850 1550
+	5700 1550 6000 1550
 Wire Wire Line
-	6300 1550 6450 1550
+	6300 1550 6600 1550
 Wire Wire Line
-	6900 1550 7050 1550
+	6900 1550 7450 1550
 Wire Wire Line
 	7050 1550 7050 1650
 Wire Wire Line
@@ -1183,11 +1221,11 @@ Wire Wire Line
 	5850 1650 5850 1550
 Connection ~ 5850 1550
 Wire Wire Line
-	5700 2400 5850 2400
+	5700 2400 6000 2400
 Wire Wire Line
-	6300 2400 6450 2400
+	6300 2400 6600 2400
 Wire Wire Line
-	7350 2400 7050 2400
+	7350 2400 6900 2400
 Wire Wire Line
 	7050 2400 7050 2500
 Wire Wire Line
@@ -1220,19 +1258,19 @@ Connection ~ 7050 700
 Wire Wire Line
 	7050 700  7050 800 
 Wire Wire Line
-	6900 700  7050 700 
+	6900 700  7350 700 
 Connection ~ 6450 700 
 Wire Wire Line
 	6450 800  6450 700 
 Wire Wire Line
-	6300 700  6450 700 
+	6300 700  6600 700 
 Connection ~ 5850 700 
 Wire Wire Line
 	5850 800  5850 700 
 Wire Wire Line
-	5700 700  5850 700 
+	5700 700  6000 700 
 Wire Wire Line
-	1050 900  1350 900 
+	1050 900  1900 900 
 Wire Wire Line
 	1350 900  1350 1000
 Wire Wire Line
@@ -1247,9 +1285,9 @@ Wire Wire Line
 Wire Wire Line
 	1350 1200 1350 1300
 Wire Wire Line
-	2900 900  3300 900 
+	2900 900  3800 900 
 Wire Wire Line
-	3800 800  3800 900 
+	3800 800  3800 950 
 Wire Wire Line
 	3300 1000 3300 900 
 Connection ~ 3300 900 
@@ -1258,7 +1296,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 1300 3000 1350
 Wire Wire Line
-	3000 1650 3000 1700
+	3000 1650 3000 1800
 Wire Wire Line
 	2900 1700 3000 1700
 Connection ~ 3000 1700
@@ -1283,19 +1321,19 @@ Wire Notes Line
 Wire Wire Line
 	4100 2900 4100 2950
 Wire Wire Line
-	4100 2950 4150 2950
+	4100 2950 4200 2950
 Wire Wire Line
 	4200 2950 4200 2900
 Wire Wire Line
 	4150 3000 4150 2950
 Connection ~ 4150 2950
 Wire Wire Line
-	3250 2350 3250 2400
+	3250 2350 3250 2450
 Connection ~ 3250 2400
 Wire Wire Line
 	4650 2400 4750 2400
 Wire Wire Line
-	4750 2350 4750 2400
+	4750 2350 4750 2450
 Wire Wire Line
 	4750 2700 4750 2650
 Connection ~ 4750 2400
@@ -1330,11 +1368,11 @@ Connection ~ 4250 4850
 Wire Wire Line
 	4250 4150 4250 4850
 Wire Wire Line
-	4250 3700 4250 3750
+	4250 3700 4250 3850
 Wire Wire Line
 	9800 1150 9900 1150
 Wire Wire Line
-	9900 1050 9900 1150
+	9900 1050 9900 1200
 Connection ~ 9900 1150
 Wire Wire Line
 	9900 1400 9900 1450
@@ -1349,10 +1387,10 @@ Wire Wire Line
 Wire Wire Line
 	9850 2150 9850 2200
 Wire Wire Line
-	7350 700  7350 1550
+	7350 700  7350 2400
 Connection ~ 7350 1550
 Wire Wire Line
-	7650 1550 7950 1550
+	7650 1550 8000 1550
 Wire Wire Line
 	7550 2000 7550 2050
 Wire Wire Line
@@ -1364,7 +1402,7 @@ Wire Wire Line
 Wire Wire Line
 	600  3100 600  3150
 Wire Wire Line
-	600  3450 600  3500
+	600  3450 600  3550
 Wire Wire Line
 	600  3900 600  3850
 Wire Wire Line
@@ -1386,7 +1424,7 @@ Wire Notes Line
 Wire Wire Line
 	7550 1800 7550 1750
 Wire Wire Line
-	7550 1750 7950 1750
+	7550 1750 8000 1750
 Wire Wire Line
 	8750 1950 8800 1950
 Wire Wire Line
@@ -1398,7 +1436,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 4750 6600 4750
 Wire Wire Line
-	4100 4850 4250 4850
+	4100 4850 4850 4850
 Wire Wire Line
 	4100 4950 4850 4950
 Wire Wire Line
@@ -1418,12 +1456,12 @@ Wire Notes Line
 Wire Wire Line
 	1800 2950 1800 3000
 Wire Wire Line
-	1300 2450 1300 2650
+	1300 2450 1300 3100
 Wire Wire Line
 	1300 3750 1300 3700
 Connection ~ 600  3500
 Wire Wire Line
-	1700 3400 1800 3400
+	1700 3400 1950 3400
 Wire Wire Line
 	1800 3400 1800 3300
 Wire Wire Line
@@ -1489,7 +1527,7 @@ Wire Notes Line
 Wire Wire Line
 	3600 2600 3650 2600
 Wire Wire Line
-	3150 2400 3250 2400
+	3150 2400 3650 2400
 Wire Wire Line
 	2900 2400 2950 2400
 Wire Notes Line
@@ -1505,9 +1543,9 @@ Wire Notes Line
 Wire Wire Line
 	7950 1550 7950 1500
 Wire Wire Line
-	7950 1200 7950 1250
+	7950 1200 7950 1300
 Wire Wire Line
-	7950 900  7950 950 
+	7950 900  7950 1000
 Wire Wire Line
 	7950 700  7950 650 
 Wire Wire Line
@@ -1521,9 +1559,9 @@ Connection ~ 7950 1250
 Wire Wire Line
 	8300 650  8350 650 
 Wire Wire Line
-	8350 650  8350 950 
+	8350 650  8350 1550
 Wire Wire Line
-	8300 1550 8350 1550
+	8300 1550 8800 1550
 Wire Wire Line
 	8300 950  8350 950 
 Connection ~ 8350 950 
@@ -1535,9 +1573,9 @@ Wire Wire Line
 Wire Wire Line
 	7950 2650 7950 2600
 Wire Wire Line
-	7950 2300 7950 2350
+	7950 2300 7950 2400
 Wire Wire Line
-	7950 2000 7950 2050
+	7950 2000 7950 2100
 Wire Wire Line
 	7950 1750 7950 1800
 Wire Wire Line
@@ -1547,9 +1585,9 @@ Wire Wire Line
 	8000 2350 7950 2350
 Connection ~ 7950 2350
 Wire Wire Line
-	8300 1750 8350 1750
+	8300 1750 8800 1750
 Wire Wire Line
-	8350 1750 8350 2050
+	8350 1750 8350 2650
 Wire Wire Line
 	8350 2650 8300 2650
 Wire Wire Line
@@ -1605,7 +1643,7 @@ X
 Text Notes 10300 3050 0    50   ~ 0
 X
 $Comp
-L train_horn:C_Small C4
+L C_Small C4
 U 1 1 5A8B9C6D
 P 3300 1100
 F 0 "C4" H 3310 1170 50  0000 L CNN
@@ -1620,7 +1658,7 @@ F 7 "CAP CER 4.7UF 6.3V X5R 0805" H 3300 1100 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R4
+L R R4
 U 1 1 5A8BB0D0
 P 1800 3150
 F 0 "R4" V 1880 3150 50  0000 C CNN
@@ -1635,7 +1673,7 @@ F 7 "RES SMD 100K OHM 1% 1/8W 0805" H 1800 3150 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C7
+L C_Small C7
 U 1 1 5A8BD6C5
 P 4750 2550
 F 0 "C7" H 4760 2620 50  0000 L CNN
@@ -1650,7 +1688,7 @@ F 7 "CAP CER 1UF 16V X7R 0805" H 4750 2550 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C5
+L C_Small C5
 U 1 1 5A8BF290
 P 4450 3950
 F 0 "C5" H 4460 4020 50  0000 L CNN
@@ -1665,7 +1703,7 @@ F 7 "CAP CER 1UF 16V X7R 0805" H 4450 3950 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C6
+L C_Small C6
 U 1 1 5A8BFFC7
 P 4700 3950
 F 0 "C6" H 4710 4020 50  0000 L CNN
@@ -1680,7 +1718,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 4700 3950 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R14
+L R R14
 U 1 1 5A8C247F
 P 6650 5450
 F 0 "R14" V 6730 5450 50  0000 C CNN
@@ -1695,7 +1733,7 @@ F 7 "RES SMD 1K OHM 1% 1/8W 0805" H 6650 5450 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:C_Small C8
+L C_Small C8
 U 1 1 5A8C532B
 P 5850 900
 F 0 "C8" H 5860 970 50  0000 L CNN
@@ -1710,7 +1748,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 5850 900 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C11
+L C_Small C11
 U 1 1 5A8C588E
 P 6450 900
 F 0 "C11" H 6460 970 50  0000 L CNN
@@ -1725,7 +1763,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 6450 900 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C14
+L C_Small C14
 U 1 1 5A8C5990
 P 7050 900
 F 0 "C14" H 7060 970 50  0000 L CNN
@@ -1740,7 +1778,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 7050 900 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C9
+L C_Small C9
 U 1 1 5A8C7513
 P 5850 1750
 F 0 "C9" H 5860 1820 50  0000 L CNN
@@ -1755,7 +1793,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 5850 1750 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C12
+L C_Small C12
 U 1 1 5A8C7D40
 P 6450 1750
 F 0 "C12" H 6460 1820 50  0000 L CNN
@@ -1770,7 +1808,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 6450 1750 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C15
+L C_Small C15
 U 1 1 5A8C8037
 P 7050 1750
 F 0 "C15" H 7060 1820 50  0000 L CNN
@@ -1785,7 +1823,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 7050 1750 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C10
+L C_Small C10
 U 1 1 5A8C8CBF
 P 5850 2600
 F 0 "C10" H 5860 2670 50  0000 L CNN
@@ -1800,7 +1838,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 5850 2600 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C13
+L C_Small C13
 U 1 1 5A8C94A0
 P 6450 2600
 F 0 "C13" H 6460 2670 50  0000 L CNN
@@ -1815,7 +1853,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 6450 2600 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C16
+L C_Small C16
 U 1 1 5A8C9A15
 P 7050 2600
 F 0 "C16" H 7060 2670 50  0000 L CNN
@@ -1830,7 +1868,7 @@ F 7 "CAP CER 0.1UF 16V X7R 0805" H 7050 2600 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R11
+L R R11
 U 1 1 5A8CB2CC
 P 6150 700
 F 0 "R11" V 6230 700 50  0000 C CNN
@@ -1845,7 +1883,7 @@ F 7 "RES SMD 6.2K OHM 1% 1/8W 0805" H 6150 700 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R15
+L R R15
 U 1 1 5A8CB861
 P 6750 700
 F 0 "R15" V 6830 700 50  0000 C CNN
@@ -1860,7 +1898,7 @@ F 7 "RES SMD 6.2K OHM 1% 1/8W 0805" H 6750 700 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R12
+L R R12
 U 1 1 5A8CE206
 P 6150 1550
 F 0 "R12" V 6230 1550 50  0000 C CNN
@@ -1875,7 +1913,7 @@ F 7 "RES SMD 5.1K OHM 1% 1/8W 0805" H 6150 1550 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R16
+L R R16
 U 1 1 5A8CE945
 P 6750 1550
 F 0 "R16" V 6830 1550 50  0000 C CNN
@@ -1890,7 +1928,7 @@ F 7 "RES SMD 5.1K OHM 1% 1/8W 0805" H 6750 1550 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R13
+L R R13
 U 1 1 5A8D079C
 P 6150 2400
 F 0 "R13" V 6230 2400 50  0000 C CNN
@@ -1905,7 +1943,7 @@ F 7 "RES SMD 3.6K OHM 1% 1/8W 0805" H 6150 2400 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R17
+L R R17
 U 1 1 5A8D0F61
 P 6750 2400
 F 0 "R17" V 6830 2400 50  0000 C CNN
@@ -1920,7 +1958,7 @@ F 7 "RES SMD 3.6K OHM 1% 1/8W 0805" H 6750 2400 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:C_Small C19
+L C_Small C19
 U 1 1 5A8D3C65
 P 8750 2300
 F 0 "C19" H 8760 2370 50  0000 L CNN
@@ -1935,7 +1973,7 @@ F 7 "CAP CER 0.22UF 25V X7R 0805" H 8750 2300 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:C_Small C20
+L C_Small C20
 U 1 1 5A8D4A1F
 P 9900 1300
 F 0 "C20" H 9910 1370 50  0000 L CNN
@@ -1950,7 +1988,7 @@ F 7 "CAP CER 1UF 16V X7R 0805" H 9900 1300 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L train_horn:R R19
+L R R19
 U 1 1 5A8D76FD
 P 8150 950
 F 0 "R19" V 8230 950 50  0000 C CNN
@@ -1965,7 +2003,7 @@ F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 950 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R20
+L R R20
 U 1 1 5A8D7E40
 P 8150 1250
 F 0 "R20" V 8230 1250 50  0000 C CNN
@@ -1980,7 +2018,7 @@ F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 1250 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R21
+L R R21
 U 1 1 5A8D83AE
 P 8150 1550
 F 0 "R21" V 8230 1550 50  0000 C CNN
@@ -1995,7 +2033,7 @@ F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 1550 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R22
+L R R22
 U 1 1 5A8D8B66
 P 8150 1750
 F 0 "R22" V 8230 1750 50  0000 C CNN
@@ -2010,7 +2048,7 @@ F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 1750 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R23
+L R R23
 U 1 1 5A8D96A9
 P 8150 2050
 F 0 "R23" V 8230 2050 50  0000 C CNN
@@ -2025,7 +2063,7 @@ F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 2050 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R24
+L R R24
 U 1 1 5A8D99AE
 P 8150 2350
 F 0 "R24" V 8230 2350 50  0000 C CNN
@@ -2040,7 +2078,7 @@ F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 2350 60  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L train_horn:R R25
+L R R25
 U 1 1 5A8D9CA3
 P 8150 2650
 F 0 "R25" V 8230 2650 50  0000 C CNN
@@ -2054,88 +2092,4 @@ F 7 "RES SMD 10K OHM 1% 1/8W 0805" H 8150 2650 60  0001 C CNN "Description"
 	1    8150 2650
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4700 3750 4850 3750
-Wire Wire Line
-	4700 4150 4850 4150
-Wire Wire Line
-	4450 3750 4700 3750
-Wire Wire Line
-	4450 4150 4450 4200
-Wire Wire Line
-	6450 1550 6600 1550
-Wire Wire Line
-	5850 1550 6000 1550
-Wire Wire Line
-	6450 2400 6600 2400
-Wire Wire Line
-	5850 2400 6000 2400
-Wire Wire Line
-	7050 1550 7350 1550
-Wire Wire Line
-	7050 2400 6900 2400
-Wire Wire Line
-	7050 700  7350 700 
-Wire Wire Line
-	6450 700  6600 700 
-Wire Wire Line
-	5850 700  6000 700 
-Wire Wire Line
-	1800 900  1900 900 
-Wire Wire Line
-	3300 900  3800 900 
-Wire Wire Line
-	3000 1700 3000 1800
-Wire Wire Line
-	3800 900  3800 950 
-Wire Wire Line
-	1350 900  1800 900 
-Wire Wire Line
-	4150 2950 4200 2950
-Wire Wire Line
-	3250 2400 3250 2450
-Wire Wire Line
-	3250 2400 3650 2400
-Wire Wire Line
-	4750 2400 4750 2450
-Wire Wire Line
-	4250 3750 4250 3850
-Wire Wire Line
-	4250 4850 4850 4850
-Wire Wire Line
-	9900 1150 9900 1200
-Wire Wire Line
-	7350 1550 7350 2400
-Wire Wire Line
-	7350 1550 7450 1550
-Wire Wire Line
-	600  3500 600  3550
-Wire Wire Line
-	1800 3400 1950 3400
-Wire Wire Line
-	1300 2650 1300 3100
-Wire Wire Line
-	7950 950  7950 1000
-Wire Wire Line
-	7950 1250 7950 1300
-Wire Wire Line
-	8350 950  8350 1250
-Wire Wire Line
-	8350 1250 8350 1550
-Wire Wire Line
-	7950 2050 7950 2100
-Wire Wire Line
-	7950 2350 7950 2400
-Wire Wire Line
-	8350 2050 8350 2350
-Wire Wire Line
-	8350 2350 8350 2650
-Wire Wire Line
-	7950 1550 8000 1550
-Wire Wire Line
-	7950 1750 8000 1750
-Wire Wire Line
-	8350 1550 8800 1550
-Wire Wire Line
-	8350 1750 8800 1750
 $EndSCHEMATC
